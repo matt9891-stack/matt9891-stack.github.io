@@ -6,4 +6,4 @@ categories: Data
 tags: [Python, ML, SQL, Tableau, certificate]
 ---
 
-[Uploading Data Analytics certificate.pdf…]()
+<img width="601" height="810" alt="Certificate" src="https://github.com/user-attachments/assets/3b26a8be-0e58-481a-93be-9f767a1abd4e" />
