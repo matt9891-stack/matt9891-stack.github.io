@@ -6,6 +6,7 @@ categories: Python/JavaScript
 tags: [BMI calculator]
 ---
 # Utilty_BMI
+
 In this project, we have created two small utilities that calculate the BMI (Body Mass Index) and assign a class based on the value of the index.
 
 The two utilities have been developed using two of the most common programming languages, **Python** and **JavaScript**, with the final aim of comparing them.
