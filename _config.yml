@@ -40,12 +40,12 @@ author: matt9891-stack
 #   "Copyright (c) 2017-{currentYear} <a href="https://example.com">{author}</a>"
 #   "Copyright © 2017-2021 Foobar"
 #
-copyright: "Unpublished Work (cleft) 2017-{currentYear} {author}"
+copyright: "Unpublished Work (cleft) {currentYear} {author}"
 
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  I am a data scientist currently pursuing a Master’s in Data Science, passionate about transforming complex data into meaningful insights. 
+  My portfolio showcases projects in data analysis, machine learning, predictive modelling, and end-to-end data solutions, 
+  demonstrating my ability to uncover patterns, solve real-world problems, and create actionable insights that drive informed decisions.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
