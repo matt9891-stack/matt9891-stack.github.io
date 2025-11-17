@@ -2,7 +2,7 @@
 layout: post
 title: "IoT Application – Opportunities and Challenges"
 date: 2025-11-04
-categories: [Modulo 3, Big Data Depriching]
+categories: [Module 3, Depriching Big Data]
 ---
 
 ## IoT Application – Opportunities and Challenges
