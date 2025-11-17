@@ -2,13 +2,13 @@
 layout: post
 title: "Body Mass Index Utility Calculator"
 subtitle: "Each post has a subtitle"
-categories: [Python, JavaScript]
+categories: [Module 2, Numerical Analysis]
 tags: [Python, JavaScript]
 ---
 
 # Body Mass Index Utility Calculator
 
-This project aims to create two utilities to calculate the Body Mass Index (BMI) using two different programming languages — Python and JavaScript — and to compare their performance and efficiency.
+This project aims to create two utilities to calculate Body Mass Index (BMI) in Python and JavaScript, and to compare their performance and efficiency.
 
 You can explore the full project and source code on GitHub:
 
