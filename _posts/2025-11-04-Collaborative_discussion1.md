@@ -2,7 +2,8 @@
 layout: post
 title: "IoT Application – Opportunities and Challenges"
 date: 2025-11-04
-categories: [Module 3, Depriching Big Data]
+categories: [Module 3, Deciphering Big Data]
+
 ---
 
 ## IoT Application – Opportunities and Challenges
@@ -13,7 +14,7 @@ The **Internet of Things (IoT)**, defined as a network of connected devices and 
 
 ### 🌐 Opportunities
 
-Among the main opportunities, **data analytics** improves operational efficiency, cost optimisation, and decision-making through real-time insights that enhance the **agility and resilience** of organisations (al., 2023).
+Among the main opportunities, **data analytics** improves operational efficiency, optimises costs, and supports decision-making through real-time insights that enhance the **agility and resilience** of organisations (al., 2023).
 
 **Key opportunities include:**
 - Improved operational efficiency  
