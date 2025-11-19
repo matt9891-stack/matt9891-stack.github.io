@@ -15,22 +15,28 @@ Today, with a solid foundation in data analytics and hands-on experience in reta
 
 In addition to my technical skills, I bring a diverse set of transferable competencies from my background in management and retail—such as leadership, communication, and problem-solving—that I continue to apply and refine in every project I undertake.
 
-# Education
+# 🎓 Education
 
-Bachelor's degree in EHS at the University of Parma, Italy
+- 🎓 **Bachelor's Degree in Environmental Health & Safety (EHS)**
+  - University of Parma, Italy
 
-Studying for an MSc in Data Science at the University of Essex
+- 📘 **MSc in Data Science (In Progress)**
+  - University of Essex
+# 🧰 Technical Skills Portfolio
 
-# Language and tools
+## 🐍 Programming Languages
+- 🐍 **Python**
+- 📐 **R**
 
-Python
+## 📊 Data Analysis & Manipulation
+- 🔢 **NumPy**
+- 🧮 **Pandas**
 
-Numpy
+## 🗄️ Databases
+- 🐘 **PostgreSQL**
+- 🖥️ **SQL Server**
+- 🔍 **Google BigQuery**
 
-Pandas
-
-R
-
-PostgreSQL
-
-Tableau
+## 📉 Data Visualization
+- 📊 **Tableau**
+- 📊 **Google Looker**
