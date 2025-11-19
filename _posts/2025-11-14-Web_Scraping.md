@@ -8,6 +8,8 @@ tags: [Python]
 
 # Web_Scraping
 
+[GitHub Repository](https://github.com/matt9891-stack/Web_Scraping.git)
+
 🧠 Job Scraper for Data Scientist Roles in the UK
 
 This Python script automates the extraction of job listings for Data Scientist positions from TotalJobs UK. It collects key information such as job titles, company names, locations, and salary details, and saves the results in a structured JSON file for further analysis or integration.
@@ -56,4 +58,3 @@ Would you like me to help you add pagination or convert the output into a DataFr
 - This script assumes the structure of the TotalJobs HTML remains consistent. If the site layout changes, selectors may need to be updated.
 - It currently scrapes only the first page of results. Pagination support can be added for broader coverage.
 
-Link: [https://github.com/matt9891-stack/matt9891-stack.github.io/blob/main/_posts/Web_scraping.py](https://github.com/matt9891-stack/Web_Scraping.git)
