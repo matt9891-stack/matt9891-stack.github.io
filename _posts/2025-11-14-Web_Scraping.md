@@ -9,6 +9,7 @@ tags: [Python]
 # Web_Scraping
 
 [GitHub Repository](https://github.com/matt9891-stack/Web_Scraping.git)
+[Script](https://github.com/matt9891-stack/Web_Scraping/blob/main/Web_scraping.py#L1C1-L54C56)
 
 🧠 Job Scraper for Data Scientist Roles in the UK
 
