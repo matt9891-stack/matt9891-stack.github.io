@@ -11,6 +11,8 @@ tags: [Python, SQL]
 
 [GitHub Repository](https://github.com/matt9891-stack/Data_Wrangling_DBMS.git)
 
+[Notebook](https://github.com/matt9891-stack/Data_Wrangling_DBMS/blob/main/DBMS_seminar.ipynb)
+
 📊 Analysis of Child Labour Worldwide
 
 This project aims to analyse child labour data across countries and regions, highlighting how percentages have changed over time and how they vary geographically.
