@@ -9,6 +9,7 @@ tags: [Python]
 
 ## 📂 Seminar_week5_Ebola_data  
 [GitHub Repository](https://github.com/matt9891-stack/Seminar_week5_Ebola_data)  
+[Notebook](https://github.com/matt9891-stack/Seminar_week5_Ebola_data/blob/main/Seminar_activity.ipynb)
 
 This Python project focuses on analyzing the **Ebola outbreak dataset from Kaggle**, which documents cases and deaths in Western Africa. The script begins with **data cleaning** 🧹, including handling missing values and converting date strings into datetime objects, then extracts **year** 📅 and **month** 🗓 features for time‑based analysis.
 
