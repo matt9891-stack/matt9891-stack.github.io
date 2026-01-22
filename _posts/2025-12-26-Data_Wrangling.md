@@ -6,6 +6,8 @@ categories: [Module 3, Depriching Big Data]
 tags: [Python, SQL]
 ---
 
+[Notebook](https://github.com/matt9891-stack/Data_Wrangling_DBMS/blob/main/DBMS_seminar.ipynb)
+
 The file contained multiple worksheets, non-standard headers, and several non-informative rows, making it unsuitable for direct analysis. As a first step, the Excel file was programmatically inspected to identify the relevant worksheet containing child labour indicators, which was then loaded into a pandas DataFrame for further processing.
 
 <img width="887" height="634" alt="image" src="https://github.com/user-attachments/assets/6609740e-4d7f-485c-9d39-00c8a62aa1ec" />
