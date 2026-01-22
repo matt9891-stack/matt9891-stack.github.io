@@ -6,8 +6,7 @@ categories: [Module 3, Depriching Big Data]
 tags: [Python]
 ---
 # 🦠 Ebola Outbreak Dataset Analysis
-
-## 📂 Seminar_week5_Ebola_data  
+ 
 [GitHub Repository](https://github.com/matt9891-stack/Seminar_week5_Ebola_data)  
 [Notebook](https://github.com/matt9891-stack/Seminar_week5_Ebola_data/blob/main/Seminar_activity.ipynb)
 
