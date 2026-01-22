@@ -19,36 +19,38 @@ This project explores child labour across countries and regions, analyzing trend
 
 We start by importing essential Python libraries for data handling and visualization:
 
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
+  
+    import pandas as pd
+    import numpy as np
+    import matplotlib.pyplot as plt
+    import seaborn as sns 
 
 
 The dataset is an Excel file containing multiple sheets. We used ExcelFile to inspect the sheets and read the relevant "Child labour" sheet:
 
-file = pd.ExcelFile(r'C:\Users\matti\OneDrive\Desktop\MASTER\Module 3\Unit 9\Seminar\unicef_oct_2014.xls')
 
-file.sheet_names  # Check sheet names
+    file = pd.ExcelFile(r'C:\Users\matti\OneDrive\Desktop\MASTER\Module 3\Unit 9\Seminar\unicef_oct_2014.xls')
 
-df = pd.read_excel(file, sheet_name='Child labour  ')
+    file.sheet_names  # Check sheet names
 
-df.head()
+    df = pd.read_excel(file, sheet_name='Child labour  ')
+
+    df.head()
 
 2. Data Cleaning and Preparation
 
 The raw dataset contains non-informative rows and irregular headers. We kept only relevant rows and reset the indices:
 
-new_df = df.reset_index().loc[3:129, :]
+    new_df = df.reset_index().loc[3:129, :]
 
-new_df = new_df.loc[2:].reset_index(drop=True)
+    new_df = new_df.loc[2:].reset_index(drop=True)
 
-new_df = new_df.loc[1:109]  # Keep only useful rows
+    new_df = new_df.loc[1:109]  # Keep only useful rows
 
 
 Column headers were renamed for clarity:
 
-new_df = new_df.rename(columns={
+    new_df = new_df.rename(columns={
 
     new_df.columns[0]: 'Country',
     
@@ -83,16 +85,16 @@ new_df = new_df.rename(columns={
 
 To analyze trends geographically, a Region column was added. Countries were mapped to regions using a predefined dictionary:
 
-country_to_region = {
+    country_to_region = {
 
     "Albania": "Balkans", "Argentina": "South America", "Afghanistan": "Central Asia",
     
     "Bangladesh": "South Asia", "Algeria": "North Africa", "Angola": "East Africa",
     
     # ... include all other mappings
-}
+    }
 
-new_df['Region'] = new_df['Country'].map(country_to_region)
+    new_df['Region'] = new_df['Country'].map(country_to_region)
 
 
 This enabled regional analyses, such as comparing child labour in Africa versus Europe or Asia.
@@ -100,8 +102,8 @@ This enabled regional analyses, such as comparing child labour in Africa versus 
 4. Formatting Reference Years
 
 The Reference_Year column had inconsistent formats (e.g., "2011/2012", "2007-2008"). We extracted the starting year for analysis:
-
-for index, val in new_df['Reference_Year'].items():
+  
+    for index, val in new_df['Reference_Year'].items():
 
     val_str = str(val)
     
@@ -121,18 +123,18 @@ for index, val in new_df['Reference_Year'].items():
 
 The dataset contained placeholders like '-' for missing values. These were replaced with NaN and relevant columns were converted to numeric types:
 
-new_df = new_df.replace('-', np.nan)
+    new_df = new_df.replace('-', np.nan)
 
-cols_to_numeric = [
+    cols_to_numeric = [
 
     'Placde_of_residence_Rural', 'Household_wealth_quintile_Poorest',
     
     'Household_wealth_quintile_Second', 'Household_wealth_quintile_Middle',
     
     'Household_wealth_quintile_Fourth', 'Household_wealth_quintile_Richest'
-]
+    ]
 
-for col in cols_to_numeric:
+    for col in cols_to_numeric:
 
     new_df[col] = pd.to_numeric(new_df[col], errors='coerce')
 
@@ -142,64 +144,64 @@ Global Trend Over Time
 
 We examined child labour percentages from 2000 to 2013. Overall, rates were fairly stable, except for a notable spike in 2008 caused by countries like Bolivia and Nepal:
 
-new_df['Reference_Year'] = pd.to_datetime(new_df['Reference_Year'], format='%Y').dt.year
+    new_df['Reference_Year'] = pd.to_datetime(new_df['Reference_Year'], format='%Y').dt.year
 
-new_df.groupby('Reference_Year')['Total_pct'].mean().sort_index().plot(kind='bar')
+    new_df.groupby('Reference_Year')['Total_pct'].mean().sort_index().plot(kind='bar')
 
-plt.ylabel('Child Labour (%)')
+    plt.ylabel('Child Labour (%)')
 
-plt.show()
+    plt.show()
 
-Regional Analysis
+    Regional Analysis
 
 African countries had the highest child labour rates, whereas Central European countries had the lowest:
 
-new_df.groupby('Region')['Total_pct'].mean().sort_values().plot(kind='bar')
+    new_df.groupby('Region')['Total_pct'].mean().sort_values().plot(kind='bar')
 
-plt.show()
+    plt.show()
 
 Gender Analysis
 
 Child labour differs by gender. Male children tend to have higher participation rates:
 
-df_long = new_df.melt(value_vars=['Sex_pct_Male', 'Sex_pct_Female'],
+    df_long = new_df.melt(value_vars=['Sex_pct_Male', 'Sex_pct_Female'],
 
                        var_name='Sex', value_name='Value').dropna()
                        
-df_long['Value'] = pd.to_numeric(df_long['Value'], errors='coerce')
+    df_long['Value'] = pd.to_numeric(df_long['Value'], errors='coerce')
 
-sns.boxplot(df_long, x='Sex', y='Value')
+    sns.boxplot(df_long, x='Sex', y='Value')
 
-plt.show()
+    plt.show()
 
 7. Database Integration
 
 We created a PostgreSQL database called seminar, a table child_labour, and uploaded the cleaned data for scalable analysis:
 
-import psycopg2
+    import psycopg2
 
-from sqlalchemy import create_engine
+    from sqlalchemy import create_engine
 
 # Create database
 
-connection = psycopg2.connect(host='localhost', user='postgres', password='password')
+    connection = psycopg2.connect(host='localhost', user='postgres', password='password')
 
-connection.set_isolation_level(psycopg2.extensions.ISOLATION_LEVEL_AUTOCOMMIT)
+    connection.set_isolation_level(psycopg2.extensions.ISOLATION_LEVEL_AUTOCOMMIT)
 
-cur = connection.cursor()
+    cur = connection.cursor()
 
-cur.execute('CREATE DATABASE seminar')
+    cur.execute('CREATE DATABASE seminar')
+  
+    cur.close()
 
-cur.close()
-
-connection.close()
+    connection.close()
 
 
 # Connect to DB and create table
 
-engine = create_engine("postgresql+psycopg2://postgres:password@localhost:5432/seminar")
+    engine = create_engine("postgresql+psycopg2://postgres:password@localhost:5432/seminar")
 
-new_df.to_sql(name='child_labour', con=engine, if_exists='replace', index=False)
+    new_df.to_sql(name='child_labour', con=engine, if_exists='replace', index=False)
 
 
 This setup ensures that the dataset is centralized, clean, and ready for further queries or dashboards.
