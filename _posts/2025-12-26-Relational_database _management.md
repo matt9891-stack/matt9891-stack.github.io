@@ -15,7 +15,7 @@ Analysis of Child Labour Worldwide
 
 This project explores child labour across countries and regions, analyzing trends over time and differences by gender, region, and socioeconomic factors. The workflow included data import, cleaning, analysis, and database storage.
 
-1. Notebook Setup and Data Import
+## 1. Notebook Setup and Data Import
 
 We start by importing essential Python libraries for data handling and visualization:
 
@@ -37,7 +37,7 @@ The dataset is an Excel file containing multiple sheets. We used ExcelFile to in
 
     df.head()
 
-2. Data Cleaning and Preparation
+## 2. Data Cleaning and Preparation
 
 The raw dataset contains non-informative rows and irregular headers. We kept only relevant rows and reset the indices:
 
@@ -79,9 +79,9 @@ Column headers were renamed for clarity:
     new_df.columns[12]: 'Reference_Year',
     
     new_df.columns[13]: 'Data_Source'
-})
+    })
 
-3. Adding Geographic Regions
+## 3. Adding Geographic Regions
 
 To analyze trends geographically, a Region column was added. Countries were mapped to regions using a predefined dictionary:
 
@@ -99,7 +99,7 @@ To analyze trends geographically, a Region column was added. Countries were mapp
 
 This enabled regional analyses, such as comparing child labour in Africa versus Europe or Asia.
 
-4. Formatting Reference Years
+## 4. Formatting Reference Years
 
 The Reference_Year column had inconsistent formats (e.g., "2011/2012", "2007-2008"). We extracted the starting year for analysis:
   
@@ -119,7 +119,7 @@ The Reference_Year column had inconsistent formats (e.g., "2011/2012", "2007-200
     
         new_df.at[index, 'Reference_Year'] = val_str
 
-5. Handling Missing Values and Numeric Conversion
+## 5. Handling Missing Values and Numeric Conversion
 
 The dataset contained placeholders like '-' for missing values. These were replaced with NaN and relevant columns were converted to numeric types:
 
@@ -138,7 +138,7 @@ The dataset contained placeholders like '-' for missing values. These were repla
 
     new_df[col] = pd.to_numeric(new_df[col], errors='coerce')
 
-6. Exploratory Data Analysis
+## 6. Exploratory Data Analysis
    
 Global Trend Over Time
 
@@ -174,7 +174,7 @@ Child labour differs by gender. Male children tend to have higher participation 
 
     plt.show()
 
-7. Database Integration
+## 7. Database Integration
 
 We created a PostgreSQL database called seminar, a table child_labour, and uploaded the cleaned data for scalable analysis:
 
@@ -206,7 +206,7 @@ We created a PostgreSQL database called seminar, a table child_labour, and uploa
 
 This setup ensures that the dataset is centralized, clean, and ready for further queries or dashboards.
 
-8. Key Findings
+## 8. Key Findings
 
 Child labour rates vary significantly by region. African countries generally have the highest rates, while Central Europe has the lowest.
 
@@ -214,7 +214,7 @@ In 2008, South Asia and South America saw a spike due to Bolivia and Nepal.
 
 Gender differences exist, with boys more likely to be engaged in child labour than girls.
 
-9. Conclusion
+## 9. Conclusion
 
 This project demonstrates:
 
