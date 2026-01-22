@@ -12,7 +12,7 @@ The **Internet of Things (IoT)**, defined as a network of connected devices and 
 
 ---
 
-### 🌐 Opportunities
+###  Opportunities
 
 Among the main opportunities, **data analytics** improves operational efficiency, optimises costs, and supports decision-making through real-time insights that enhance the **agility and resilience** of organisations (al., 2023).
 
@@ -24,7 +24,7 @@ Among the main opportunities, **data analytics** improves operational efficiency
 
 ---
 
-### ⚠️ Challenges
+###  Challenges
 
 However, these benefits come with important **challenges**:
 
@@ -35,7 +35,7 @@ However, these benefits come with important **challenges**:
 
 ---
 
-### 🧹 Data Quality and Cleaning
+###  Data Quality and Cleaning
 
 Managing such vast data volumes also raises **data quality issues**, including missing values, formatting inconsistencies, and erroneous entries.  
 Data cleaning is therefore **essential** to ensure:
@@ -47,18 +47,18 @@ Data cleaning is therefore **essential** to ensure:
 Ensuring **veracity**—one of the key paradigms of Big Data—is crucial.  
 Techniques such as **boxplots** and **Q–Q plots** support outlier detection and help choose appropriate statistical models.
 
-> ⚖️ *However, data cleaning alone cannot remove all biases. Technical accuracy must be combined with contextual understanding and awareness of data sources (Oclc.org, 2025).*
+>  *However, data cleaning alone cannot remove all biases. Technical accuracy must be combined with contextual understanding and awareness of data sources (Oclc.org, 2025).*
 
 ---
 
-### 🏁 Conclusion
+###  Conclusion
 
 While IoT and Big Data offer substantial opportunities to enhance efficiency and personalise services, their potential is moderated by **technical**, **ethical**, and **data-quality** challenges.  
 Addressing these through **robust governance**, **skills development**, and **careful data management** is essential to fully realise the benefits of IoT-driven analytics.
 
 ---
 
-## 📚 References
+##  References
 
 - Abba, A., Hamayadji Abdoul Aziz, Arouna Ndam Njoya, Moussa Aboubakar, Assidé Christian Djedouboum, Ousmane Thiare & Alidou Mohamadou (2024). *Data collection in IoT networks: Architecture, solutions, protocols and challenges.* **IET Wireless Sensor Systems.** [https://doi.org/10.1049/wss2.12080](https://doi.org/10.1049/wss2.12080)
 
