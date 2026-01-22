@@ -10,13 +10,13 @@ tags: [Python]
 [GitHub Repository](https://github.com/matt9891-stack/Seminar_week5_Ebola_data)  
 [Notebook](https://github.com/matt9891-stack/Seminar_week5_Ebola_data/blob/main/Seminar_activity.ipynb)
 
-This Python project focuses on analyzing the **Ebola outbreak dataset from Kaggle**, which documents cases and deaths in Western Africa. The script begins with **data cleaning** , including handling missing values and converting date strings into datetime objects, then extracts **year**  and **month**  features for time‑based analysis.
+This Python project focuses on analysing the **Ebola outbreak dataset from Kaggle**, which documents cases and deaths in Western Africa. The script begins with **data cleaning** , including handling missing values and converting date strings into datetime objects, then extracts **year**  and **month**  features for time‑based analysis.
 
 <img width="913" height="106" alt="image" src="https://github.com/user-attachments/assets/b3d6fc18-2378-4b6c-b4b7-57e3a3a55c68" />
 
 <img width="875" height="433" alt="image" src="https://github.com/user-attachments/assets/251c3444-bdfa-4784-8f87-c17a9dd9ed6a" />
 
-Using **Pandas** , the data is aggregated to calculate **yearly totals** of confirmed, probable, and suspected cases and deaths, as well as **monthly totals for 2015** broken down by country. The analysis also computes **death rates** , highlighting differences in the severity of outbreaks across countries.
+Using **Pandas**, the data is aggregated to calculate **yearly totals** of confirmed, probable, and suspected cases and deaths, as well as **monthly totals for 2015** broken down by country. The analysis also computes **death rates** , highlighting differences in the severity of outbreaks across countries.
 
 The script employs **Seaborn**  and **Matplotlib**  to create clear visualizations:
 
@@ -31,8 +31,11 @@ The script employs **Seaborn**  and **Matplotlib**  to create clear visualizatio
 <img width="881" height="774" alt="image" src="https://github.com/user-attachments/assets/c8dd415e-20ba-44bf-97f6-768bfb2636b4" />
 
 - **Death rate trends**  per month, revealing the impact of the epidemic over time.  
-- **Country‑level comparisons**  for total cases and death rates, helping identify the most affected regions.  
+- **Country‑level comparisons**  for total cases and death rates, helping identify the most affected regions.
 
-Additionally, **pivot tables**  summarize deaths per year and per country, providing a tabular perspective to complement the visualizations. Overall, the project demonstrates the use of **Python**  for **epidemiological data analysis**, combining data cleaning, aggregation, and visualization to understand the spread and impact of Ebola in Western Africa.
-If you like, I can format it in a way that fits well in your GitHub README (with badges, header styling etc.).
+  <img width="817" height="482" alt="image" src="https://github.com/user-attachments/assets/88b24840-56e4-49aa-b53f-ef3f910fe544" />
+
+
+ Overall, the project demonstrates the use of **Python**  for **epidemiological data analysis**, combining data cleaning, aggregation, and visualisation to understand the spread and impact of Ebola in Western Africa.
+
 
