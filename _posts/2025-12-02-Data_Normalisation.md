@@ -7,7 +7,6 @@ tags: [Python]
 ---
 # Overview of the Data Normalisation Process
 
-# Seminar_week7_Data_Normalisation  
 [GitHub Repository](https://github.com/matt9891-stack/Data_Normalisation_excercise.git)
 
 🔍 Initial Structure
