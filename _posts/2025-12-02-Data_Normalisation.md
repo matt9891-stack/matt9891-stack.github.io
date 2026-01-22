@@ -9,6 +9,8 @@ tags: [Python]
 
 [GitHub Repository](https://github.com/matt9891-stack/Data_Normalisation_excercise.git)
 
+[Notebook](https://github.com/matt9891-stack/Data_Normalisation_excercise/blob/main/Normalisation.ipynb)
+
 🔍 Initial Structure
 
 The original dataset was stored in one large table combining student information, course details, teachers, exam boards and exam scores. This design led to extensive duplication: each student’s personal information appeared multiple times, and each course’s information was repeated for every student enrolled. Such redundancy indicated that the table was not normalised.
