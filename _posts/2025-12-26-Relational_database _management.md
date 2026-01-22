@@ -7,8 +7,6 @@ tags: [Python, SQL]
 ---
 # Database Management
 
-# Seminar_week9_Database_management
-
 [GitHub Repository](https://github.com/matt9891-stack/Data_Wrangling_DBMS.git)
 
 [Notebook](https://github.com/matt9891-stack/Data_Wrangling_DBMS/blob/main/DBMS_seminar.ipynb)
