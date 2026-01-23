@@ -2,7 +2,7 @@
 layout: post
 title: "IoT Application – Opportunities and Challenges"
 date: 2025-11-04
-categories: [Module 3, Deciphering Big Data]
+categories: [Module 3 Deciphering Big Data]
 
 ---
 
