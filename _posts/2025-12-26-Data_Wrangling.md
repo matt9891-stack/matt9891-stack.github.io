@@ -2,7 +2,7 @@
 layout: post
 title: "Database Management"
 subtitle: "This project placed a strong emphasis on data wrangling of the original UNICEF child labour dataset."
-categories: [Module 3, Depriching Big Data]
+categories: [Module 3, Deciphering Big Data]
 tags: [Python, SQL]
 ---
 
