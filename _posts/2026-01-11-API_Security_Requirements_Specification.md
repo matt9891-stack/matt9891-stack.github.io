@@ -2,7 +2,7 @@
 layout: post
 title: "API_Security_Requirements"
 date: 2026-01-11
-categories: [Module 3, Deciphering Big Data]
+categories: [Module 3 Deciphering Big Data]
 
 ---
 
