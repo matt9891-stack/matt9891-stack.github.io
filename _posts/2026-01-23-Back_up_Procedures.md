@@ -2,7 +2,7 @@
 layout: post
 title: "Back up procedures"
 subtitle: "Comparative Work on Back-up Procedures."
-categories: [Module 3, Deciphering Big Data]
+categories: [Module 3 Deciphering Big Data]
 tags: [Python]
 ---
 # Back Up Procedure
