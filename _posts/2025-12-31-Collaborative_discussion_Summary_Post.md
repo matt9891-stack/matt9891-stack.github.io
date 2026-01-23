@@ -2,7 +2,7 @@
 layout: post
 title: "Collaborative Discussion Summary Post"
 date: 2025-12-31
-categories: [Module 3, Deciphering Big Data]
+categories: [Module 3 Deciphering Big Data]
 
 ---
 # Collaborative Discussion 1 – The Data Collection Process
