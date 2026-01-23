@@ -2,7 +2,7 @@
 layout: post
 title: "Comparative work on GDPR UE and UK" 
 subtitle: "Collaborative Discussion 2 - Comparing Compliance Laws"
-categories: [Module 3, Depriching Big Data]
+categories: [Module 3, Deciphering Big Data]
 tags: [Python]
 ---
 
