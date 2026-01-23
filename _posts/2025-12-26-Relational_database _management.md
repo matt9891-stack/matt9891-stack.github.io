@@ -2,7 +2,7 @@
 layout: post
 title: "Database Management"
 subtitle: "This project demonstrates end-to-end data analysis using the UNICEF Child Labour dataset. It covers data wrangling, exploratory analysis, and integration with PostgreSQL, where a relational database is created and populated using psycopg2"
-categories: [Module 3, Depriching Big Data]
+categories: [Module 3, Deciphering Big Data]
 tags: [Python, SQL]
 ---
 # Database Management
