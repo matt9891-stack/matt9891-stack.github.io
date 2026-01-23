@@ -2,8 +2,8 @@
 layout: post
 title: "Executive_Summary"
 subtitle: "Executive_Summary of the Collaborative project"
-categories: [Module 3, Deciphering Big Data]
-tags: [Python]
+categories: [Module 3 Deciphering Big Data]
+
 ---
 # Individual Project: Executive Summary EPL Fan Fever DBMS 
 
