@@ -2,7 +2,7 @@
 layout: post
 title: "Web Scraping Script"
 subtitle: "An end-to-end Python web scraping workflow extracting job titles, companies, locations, and salaries from online job portals."
-categories: [Module 3, Depriching Big Data]
+categories: [Module 3, Deciphering Big Data]
 tags: [Python]
 ---
 
