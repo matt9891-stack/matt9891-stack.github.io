@@ -17,10 +17,7 @@ The **Internet of Things (IoT)**, defined as a network of connected devices and 
 Among the main opportunities, **data analytics** improves operational efficiency, optimises costs, and supports decision-making through real-time insights that enhance the **agility and resilience** of organisations (al., 2023).
 
 **Key opportunities include:**
-- Improved operational efficiency  
-- Enhanced decision-making through real-time data  
-- Cost optimisation and agility gains  
-- Personalised services through data-driven insights  
+The benefits include improved operational efficiency, enhanced decision-making through real-time data, cost optimisation and agility gains, and personalised services through data-driven insights. 
 
 ---
 
@@ -28,21 +25,13 @@ Among the main opportunities, **data analytics** improves operational efficiency
 
 However, these benefits come with important **challenges**:
 
-1. **Scalability and infrastructure** — Managing the growing data volume requires robust systems and scalable architectures.  
-2. **Skills shortage** — Limited internal expertise can restrict the ability to fully exploit IoT data.  
-3. **Privacy and ethics** — As more personal data are collected, risks of breaches and misuse increase.  
-4. **Algorithmic bias and transparency** — Ethical issues require balancing innovation with fairness and individual rights (al., 2023).  
+However, these benefits come with important challenges. Scalability and infrastructure require robust systems and architectures to manage growing data volumes. A skills shortage can limit the ability to fully exploit IoT data. Privacy and ethics are critical, as the collection of personal data increases the risk of breaches and misuse. Algorithmic bias and transparency raise ethical issues that require balancing innovation with fairness and protecting individual rights (al., 2023).
 
 ---
 
 ###  Data Quality and Cleaning
 
-Managing such vast data volumes also raises **data quality issues**, including missing values, formatting inconsistencies, and erroneous entries.  
-Data cleaning is therefore **essential** to ensure:
-
-- Accuracy  
-- Consistency  
-- Reliability  
+Managing such vast data volumes also creates data quality issues, including missing values, formatting inconsistencies, and erroneous entries. Data cleaning is therefore essential to ensure accuracy, consistency, and reliability.
 
 Ensuring **veracity**—one of the key paradigms of Big Data—is crucial.  
 Techniques such as **boxplots** and **Q–Q plots** support outlier detection and help choose appropriate statistical models.
@@ -57,6 +46,17 @@ While IoT and Big Data offer substantial opportunities to enhance efficiency and
 Addressing these through **robust governance**, **skills development**, and **careful data management** is essential to fully realise the benefits of IoT-driven analytics.
 
 ---
+
+# Integral Work
+
+# IoT application – Opportunities and Challenges
+
+The Internet of Things (IoT), defined as a network of connected devices and objects with sensors enabling data collection and sharing (IBM, 2023), has grown quickly due to large internet use. IoT-generated Big Data find applications in sectors such as education, enhancing personalised learning, and applications like smart cities, agriculture, industrial automation, and energy management (IoT and Big Data Technologies: Opportunities and Challenges for Higher Learning, 2020; Abba et al., 2024).
+The large use of IoT brings with it both opportunities and challenges. Among the main opportunities, data analytics improves operational efficiency, cost optimisation, and decision-making through real-time insights that enhance agility and resilience of organisations (al., 2023).
+However, these benefits come along with some important challenges, including scalability and infrastructure due to the large data volume, and a shortage of internal expertise that can limit full data utilisation. Another major concern is data privacy and ethics as organisations collect personal information, risks of breaches, data theft, and unauthorised access increase, requiring robust security and compliance. Ethical issues such as transparency and algorithmic bias highlight the need to balance innovation with individual rights (al., 2023).
+Moreover, managing such a vast amount of data can lead to quality issues, including missing values, formatting inconsistencies, or erroneous entries. Data cleaning is essential to ensure accuracy, consistency, and reliability by identifying and correcting errors ensuring one of the most important paradigms of Big Data, the veracity. Contextual understanding and visual analysis methods such as boxplots and Q–Q plots, can help the detection of outliers and support the appropriate selection of statistical models. Nevertheless, data cleaning alone cannot eliminate all biases, highlighting the importance of combining technical measures with awareness of the data’s context (Oclc.org, 2025).
+In conclusion, while IoT and Big Data offer substantial opportunities to enhance efficiency and personalise services, their potential is mitigated by technical, ethical, and data-quality challenges. Addressing these issues through robust governance, skills development, and careful data management is essential to realise the benefits of IoT-driven analytics fully.
+
 
 ##  References
 
