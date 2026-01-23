@@ -2,7 +2,7 @@
 layout: post
 title: "Data Normalisation Process"
 subtitle: "Overview of the Data Normalisation Process"
-categories: [Module 3, Depriching Big Data]
+categories: [Module 3, Deciphering Big Data]
 tags: [Python]
 ---
 # Overview of the Data Normalisation Process
