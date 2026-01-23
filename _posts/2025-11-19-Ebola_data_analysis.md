@@ -2,7 +2,7 @@
 layout: post
 title: "Ebola Data Analysis"
 subtitle: "Analysis of the Kaggle's Dataset of Ebola Outbreak in Western Africa ."
-categories: [Module 3, Depriching Big Data]
+categories: [Module 3, Deciphering Big Data]
 tags: [Python]
 ---
 #  Ebola Outbreak Dataset Analysis
