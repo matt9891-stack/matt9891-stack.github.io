@@ -2,7 +2,7 @@
 layout: post
 title: "Database Design and Architecture"
 subtitle: "Collaborative Project Database Design and Architecture"
-categories: [Module 3, Deciphering Big Data]
+categories: [Module 3 Deciphering Big Data]
 tags: [Python]
 ---
 
