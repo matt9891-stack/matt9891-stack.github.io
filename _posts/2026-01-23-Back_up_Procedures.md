@@ -24,10 +24,10 @@ Compared to full backups, GFS is more resource efficient for large databases bec
 
 Happonen, A. (2025) Data Backup in Multicloud Environment. Metropolia University of Applied Sciences, Master of Engineering in Information Technology. Available at: https://www.theseus.fi/bitstream/10024/892504/2/Happonen_Arto.pdf (Accessed: 23 January 2026).
 
-IBM.com. (2025) Db2 for Linux, UNIX and Windows. [online] Available at: https://www.ibm.com/docs/en/db2/11.5.x?topic=recovery-developing-backup-strategy (Accessed: 23/01/2026).
+IBM.com. (2025) Db2 for Linux, UNIX and Windows. [online] Available at: https://www.ibm.com/docs/en/db2/11.5.x?topic=recovery-developing-backup-strategy (Accessed: 23 January 2026).
 
 Łukasz Błocki (2024) Grandfather-Father-Son (GFS) Backup | Storware BLOG. [online] Storware. Available at: https://storware.eu/blog/grandfather-father-son-gfs-backup/?utm_source=chatgpt.com (Accessed: 23 January 2026).
 
-Nayak, S. (2023) Database backup and recovery techniques - Shruti Nayak. [online] Medium. Available at: https://medium.com/@shruti.nayak20/database-backup-and-recovery-techniques-c541faf3444a (Accessed: 23/01/2026).
+Nayak, S. (2023) Database backup and recovery techniques - Shruti Nayak. [online] Medium. Available at: https://medium.com/@shruti.nayak20/database-backup-and-recovery-techniques-c541faf3444a (Accessed: 23 January 2026).
 
 Nheu, W. (2024) The Grandfather-Father-Son Backup Scheme Explained. [online] Cyber Resilience Blog. Available at: https://www.backupassist.com/blog/the-grandfather-father-son-backup-scheme-explained (Accessed: 23 January 2026).
