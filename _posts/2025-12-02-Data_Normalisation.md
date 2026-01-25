@@ -43,7 +43,9 @@ To resolve this issue, the dataset was divided into three separate relations, ea
 
 Following this decomposition, the resulting tables were evaluated against the requirements of Third Normal Form (3NF). The Students table satisfied this condition, as all attributes were directly dependent on Student Number. The Courses table also met the criteria, with all attributes dependent solely on Course Name.
 
-Through this  process, the dataset was successfully transformed into a structure that conforms to Third Normal Form. The final design significantly reduces redundancy, eliminates update anomalies, and enforces clear functional dependencies. As a result, the database is more efficient, logically organised, and better suited for reliable data maintenance and future expansion.
+Through this  process, the dataset was successfully transformed into a structure that conforms to Third Normal Form. The final design significantly reduces redundancy, eliminates update anomalies, and enforces clear functional dependencies. As a result, the database is more efficient, logically organised, and better suited for r data maintenance and expansion.
+
+<img width="1414" height="566" alt="image" src="https://github.com/user-attachments/assets/d9037910-3a1d-4810-b3e5-83b9b3572fce" />
 
 # References
 
