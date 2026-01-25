@@ -7,7 +7,7 @@ tags: [Python, SQL]
 ---
 # Database Management
 
-[GitHub Repository](https://github.com/matt9891-stack/Data_Wrangling_DBMS.git)
+[GitHub Repository][(https://github.com/matt9891-stack/matt9891-stack.github.io/blob/main/_posts/2025-12-26-Relational_database%20_management.md)
 
 [Notebook](https://github.com/matt9891-stack/Data_Wrangling_DBMS/blob/main/DBMS_seminar.ipynb)
 
