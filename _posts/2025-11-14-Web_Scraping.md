@@ -8,7 +8,7 @@ tags: [Python]
 
 # Web_Scraping
 
-[GitHub Repository](https://github.com/matt9891-stack/Web_Scraping.git)
+[GitHub Repository](https://github.com/matt9891-stack/matt9891-stack.github.io/blob/main/_posts/2025-11-14-Web_Scraping.md)
 
 [Script](https://github.com/matt9891-stack/Web_Scraping/blob/main/Web_scraping.py#L1C1-L54C56)
 
