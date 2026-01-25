@@ -7,7 +7,7 @@ tags: [Python]
 ---
 # Overview of the Data Normalisation Process
 
-[GitHub Repository](https://github.com/matt9891-stack/Data_Normalisation_excercise.git)
+[GitHub Repository](https://github.com/matt9891-stack/matt9891-stack.github.io/blob/main/_posts/2025-12-02-Data_Normalisation.md)
 
 [Notebook](https://github.com/matt9891-stack/Data_Normalisation_excercise/blob/main/Normalisation.ipynb)
 
