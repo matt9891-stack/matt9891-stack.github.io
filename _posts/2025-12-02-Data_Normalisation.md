@@ -13,19 +13,17 @@ tags: [Python]
 
 ## Initial Structure
 
-The original dataset was stored in a single, large table that combined student details, course information, teacher assignments, exam boards, and examination results. While this structure allowed all relevant information to be accessed in one place, it resulted in significant redundancy. Each student’s personal details were repeated for every course they attended, and each course’s metadata appeared multiple times for different students. This repetition increased storage requirements and introduced the risk of inconsistencies during data updates, indicating that the table was not properly normalised.
+The original dataset was kept in a single, large table that incorporated student details, course information, teacher assignments, exam boards, and examination results, allowing, on one side, all relevant information to be accessed in one place, but, as a consequence, it resulted in redundancy and potential inconsistencies. 
 
 <img width="891" height="334" alt="image" src="https://github.com/user-attachments/assets/b85a9bb5-ec63-4143-8c45-07890700a1ac" />
 
-## Identifying the Key
+## Normalisation Process - it involves the organisation of data into specific table structures, improving data integrity and minimising data redundancies (Gomstyn and Jonker, 2025).
 
-In order to analyse the functional dependencies within the dataset, it was first necessary to identify a suitable primary key. No single attribute was capable of uniquely identifying each record. Instead, uniqueness was achieved through a combination of Student Number and Course Name, which together formed a composite key. This composite key provided the foundation for assessing how the remaining attributes depended on the identifying fields.
+## First Normal Form (1NF) - it involves ensuring that each table has a primary key and each column is stored in an atomic value.
 
-## First Normal Form (1NF)
+In order to analyse the dependencies within the dataset, it was first necessary to identify a suitable primary key. No single attribute was capable of uniquely identifying each record. Instead, uniqueness was achieved through a combination of Student Number and Course Name, which together formed a composite key. This composite key provided the foundation for assessing how the remaining attributes depended on the identifying fields.
 
 <img width="868" height="791" alt="image" src="https://github.com/user-attachments/assets/9ebc4686-23f4-4372-8adf-c4408e99e4bd" />
-
-The dataset was already compliant with the requirements of First Normal Form (1NF). All attributes contained atomic values, and there were no repeating groups or multivalued fields. Each column represented a single, indivisible piece of information, ensuring a consistent and structured representation of the data at the most basic level of normalisation.
 
 ## Second Normal Form (2NF)
 
@@ -44,3 +42,7 @@ To resolve this issue, the dataset was divided into three separate relations, ea
 Following this decomposition, the resulting tables were evaluated against the requirements of Third Normal Form (3NF). Each relation was examined to ensure that no transitive dependencies were present and that all non-key attributes depended only on the primary key. The Students table satisfied this condition, as all attributes were directly dependent on Student Number. The Courses table also met the criteria, with all attributes dependent solely on Course Name. In the StudentCourseScores table, the only non-key attribute was Exam Score, which depended exclusively on the composite key and not on any other non-key attributes.
 
 Through this systematic normalisation process, the dataset was successfully transformed into a structure that conforms to Third Normal Form. The final design significantly reduces redundancy, eliminates update anomalies, and enforces clear functional dependencies. As a result, the database is more efficient, logically organised, and better suited for reliable data maintenance and future expansion.
+
+# References
+
+Gomstyn, A. and Jonker, A. (2025). Database normalisation. [online] Ibm.com. Available at: https://www.ibm.com/think/topics/database-normalization (Accessed 02 December 2025).
