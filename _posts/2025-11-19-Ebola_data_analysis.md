@@ -7,7 +7,7 @@ tags: [Python]
 ---
 #  Ebola Outbreak Dataset Analysis
  
-[GitHub Repository](https://github.com/matt9891-stack/Seminar_week5_Ebola_data)  
+[GitHub Repository](https://github.com/matt9891-stack/matt9891-stack.github.io/blob/main/_posts/2025-11-19-Ebola_data_analysis.md)  
 [Notebook](https://github.com/matt9891-stack/Seminar_week5_Ebola_data/blob/main/Seminar_activity.ipynb)
 
 This Python project focuses on analysing the **Ebola outbreak dataset**, which shows cases and deaths in Western Africa. The script begins with **data cleaning**, including handling missing values and converting date strings into datetime objects, then extracts **year**  and **month**  for time‑based analysis.
