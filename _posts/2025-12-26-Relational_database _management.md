@@ -13,11 +13,11 @@ tags: [Python, SQL]
 
 Analysis of Child Labour Worldwide
 
-This project explores child labour across countries and regions, analyzing trends over time and differences by gender, region, and socioeconomic factors. The workflow included data import, cleaning, analysis, and database storage.
+This project explores child labour data in different countries and regions, analysing trends over time and differences by gender and region. The task included data import, cleaning, analysis, and database storage.
 
 ## 1. Notebook Setup and Data Import
 
-We start by importing essential Python libraries for data handling and visualization:
+I started by importing Python libraries for data handling and visualisation:
 
   
     import pandas as pd
@@ -26,7 +26,7 @@ We start by importing essential Python libraries for data handling and visualiza
     import seaborn as sns 
 
 
-The dataset is an Excel file containing multiple sheets. We used ExcelFile to inspect the sheets and read the relevant "Child labour" sheet:
+The dataset is an Excel file containing multiple sheets. I used ExcelFile to inspect the sheets and read the relevant "Child labour" sheet:
 
 
     file = pd.ExcelFile(r'C:\Users\matti\OneDrive\Desktop\MASTER\Module 3\Unit 9\Seminar\unicef_oct_2014.xls')
@@ -39,7 +39,7 @@ The dataset is an Excel file containing multiple sheets. We used ExcelFile to in
 
 ## 2. Data Cleaning and Preparation
 
-The raw dataset contains non-informative rows and irregular headers. We kept only relevant rows and reset the indices:
+The raw dataset contains non-informative rows and irregular headers, so I kept only relevant rows and reset the indices:
 
     new_df = df.reset_index().loc[3:129, :]
 
@@ -83,7 +83,7 @@ Column headers were renamed for clarity:
 
 ## 3. Adding Geographic Regions
 
-To analyze trends geographically, a Region column was added. Countries were mapped to regions using a predefined dictionary:
+To analyse trends geographically, a Region column was added, and countries were mapped to regions using a dictionary:
 
     country_to_region = {
 
@@ -97,11 +97,11 @@ To analyze trends geographically, a Region column was added. Countries were mapp
     new_df['Region'] = new_df['Country'].map(country_to_region)
 
 
-This enabled regional analyses, such as comparing child labour in Africa versus Europe or Asia.
+This enabled regional analyses, such as comparing child labour in Africa against Europe or Asia.
 
 ## 4. Formatting Reference Years
 
-The Reference_Year column had inconsistent formats (e.g., "2011/2012", "2007-2008"). We extracted the starting year for analysis:
+The Reference_Year column had inconsistent formats (e.g., "2011/2012", "2007-2008"). I extracted the starting year for analysis:
   
     for index, val in new_df['Reference_Year'].items():
 
@@ -121,7 +121,7 @@ The Reference_Year column had inconsistent formats (e.g., "2011/2012", "2007-200
 
 ## 5. Handling Missing Values and Numeric Conversion
 
-The dataset contained placeholders like '-' for missing values. These were replaced with NaN and relevant columns were converted to numeric types:
+The dataset contained placeholders like '-' for missing values. These were replaced with NaN, and relevant columns were converted to numeric types:
 
     new_df = new_df.replace('-', np.nan)
 
@@ -142,7 +142,7 @@ The dataset contained placeholders like '-' for missing values. These were repla
    
 Global Trend Over Time
 
-We examined child labour percentages from 2000 to 2013. Overall, rates were fairly stable, except for a notable spike in 2008 caused by countries like Bolivia and Nepal:
+I examined child labour percentages from 2000 to 2013. Overall, rates were stable, except for a notable spike in 2008 caused by countries like Bolivia and Nepal:
 
     new_df['Reference_Year'] = pd.to_datetime(new_df['Reference_Year'], format='%Y').dt.year
 
@@ -154,7 +154,7 @@ We examined child labour percentages from 2000 to 2013. Overall, rates were fair
 
     Regional Analysis
 
-African countries had the highest child labour rates, whereas Central European countries had the lowest:
+African countries had the highest child labour rates, while Central European countries had the lowest:
 
     new_df.groupby('Region')['Total_pct'].mean().sort_values().plot(kind='bar')
 
@@ -176,7 +176,7 @@ Child labour differs by gender. Male children tend to have higher participation 
 
 ## 7. Database Integration
 
-We created a PostgreSQL database called seminar, a table child_labour, and uploaded the cleaned data for scalable analysis:
+I created a PostgreSQL database called seminar, a table called child_labour, and uploaded the cleaned data for analysis:
 
     import psycopg2
 
@@ -204,11 +204,11 @@ We created a PostgreSQL database called seminar, a table child_labour, and uploa
     new_df.to_sql(name='child_labour', con=engine, if_exists='replace', index=False)
 
 
-This setup ensures that the dataset is centralized, clean, and ready for further queries or dashboards.
+This setup ensures that the dataset is centralised, clean, and ready for further queries or dashboards.
 
 ## 8. Key Findings
 
-Child labour rates vary significantly by region. African countries generally have the highest rates, while Central Europe has the lowest.
+Child labour rates differ by region, with African countries generally having the highest rates, while Central Europe has the lowest.
 
 In 2008, South Asia and South America saw a spike due to Bolivia and Nepal.
 
@@ -218,9 +218,9 @@ Gender differences exist, with boys more likely to be engaged in child labour th
 
 This project demonstrates:
 
-Data Cleaning & Standardization: Handling messy Excel files, renaming headers, and formatting dates.
+Data Cleaning & Standardisation: Handling messy Excel files, renaming headers, and formatting dates.
 
-Geographic & Temporal Analysis: Mapping countries to regions and analyzing trends over time.
+Geographic & Temporal Analysis: Mapping countries to regions and analysing trends over time.
 
 Database Integration: Using PostgreSQL for secure storage and scalable analysis.
 
