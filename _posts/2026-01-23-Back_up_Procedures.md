@@ -6,19 +6,26 @@ categories: [Module 3 Deciphering Big Data]
 tags: [Python]
 ---
 # Back Up Procedure
-A database backup is used to create a copy of the original database in case data is lost. A database recovery strategy helps organisations restore data with accuracy and integrity when recovery is required (Ibm.com, 2025). 
+A database backup is used to create a copy of the original database in case data is lost. A database recovery strategy helps organisations restore data with accuracy and integrity (Ibm, 2025). 
 
-There are several types of backup operations. A full backup copies the entire database, including all data and structure, offering a complete recovery solution but requiring large storage space and longer backup times. Incremental backups store only the changes made since the last backup, making them faster and more storage efficient; however, recovery can take longer because multiple backups may be needed. Differential backups copy changes made since the last full backup, allowing faster recovery than incremental backups. Snapshot backups create a point-in-time copy of the database and are useful for quick backups, testing, and development. Continuous Data Protection (CDP) records data changes in near real time, ensuring minimal data loss. Replication maintains multiple copies of the database to support disaster recovery and improve read performance (Nayak, 2023).
+There are several types of backup operations, such as full backup, which copies the entire database, including all data and structure, offering a complete recovery but requiring large storage space and longer backup times. 
+Incremental backups, on the other hand, store only the changes made since the last backup, making it faster and more storage efficient. 
+However, recovery can take longer because multiple backups may be needed. 
+Differential backups copy changes made since the last full backup, allowing faster recovery than incremental backups. 
+Snapshot backups create a point-in-time copy of the database and can be useful for quick backups, testing, and development. 
+Continuous Data Protection (CDP) records data changes in near real time, ensuring minimal data loss. Replication maintains multiple copies of the database to support disaster recovery and improve read performance (Nayak, 2023).
 
 <img width="585" height="565" alt="image" src="https://github.com/user-attachments/assets/e557142c-6385-4970-bcce-0dd41208abb8" />
 
 # The Grandfather–Father–Son (GFS)
 
-The Grandfather–Father–Son (GFS) backup is a rotational procedure based on a hierarchical system, where different types of backups are performed on a daily, weekly, and monthly basis to ensure data can be restored from multiple points in time (Happonen, 2025). The GFS strategy provides strong data protection by maintaining multiple generations of backups. Daily “son” backups allow organisations to quickly recover recent data, reducing downtime and supporting business continuity. Weekly “father” and monthly “grandfather” backups preserve historical data, which is useful for audits, regulatory compliance, and restoring older versions of information. This structured approach helps organisations meet data retention requirements while minimising the risk of permanent data loss. By distributing backups across different time periods, GFS also improves resilience against hardware failures, ransomware, and accidental deletion, making it a reliable and widely used backup strategy (Nheu, 2024).
+The Grandfather–Father–Son (GFS) backup is a rotational procedure based on a hierarchical system, where different types of backups are performed on a daily, weekly, and monthly basis can ensure data can be restored from multiple points in time (Happonen, 2025). The GFS strategy provides strong data protection by maintaining multiple generations of backups with Daily “son” backups, allowing organisations to quickly recover recent data, reducing downtime and supporting business continuity. Weekly “father” and monthly “grandfather” backups, on the other hand, preserve historical data, which is useful for audits, regulatory compliance, and restoring older versions of information. 
+This structured approach helps organisations meet data retention requirements while reducing the risk of permanent data loss. By distributing backups across different time periods, GFS also improves resilience against hardware failures, ransomware, and accidental deletion, making it a reliable and widely used backup strategy (Nheu, 2024).
 
 <img width="559" height="213" alt="image" src="https://github.com/user-attachments/assets/54e40c3c-f429-4b64-9a18-a4a7a2e1aedf" />
 
-Compared to full backups, GFS is more resource efficient for large databases because it avoids creating full backups every day, reducing storage and system load. Unlike incremental or differential backups, which are faster and use less space, GFS offers multiple recovery points and preserves historical data systematically. However, it is slower to restore than continuous data protection (CDP), which captures changes in real time, and may consume considerable storage due to multiple backup generations (Łukasz Błocki, 2024). Overall, GFS is effective for organisations prioritising historical data retention, compliance, and risk mitigation, but it may be less suitable where immediate, real-time recovery is essential.
+Compared to full backups, GFS is more resource-efficient for large databases because it avoids creating full backups every day, reducing storage and system load. Unlike incremental or differential backups, which are faster and use less space, GFS offers multiple recovery points and preserves historical data. However, it is slower to restore than continuous data protection (CDP), which captures changes in real time, and may consume considerable storage due to multiple backup generations (Łukasz Błocki, 2024). 
+Overall, GFS is effective for organisations prioritising historical data retention, compliance, and risk mitigation, but it may be less suitable where immediate, real-time recovery is essential.
 
 # References
 
