@@ -17,9 +17,9 @@ The original dataset was kept in a single, large table that incorporated student
 
 <img width="891" height="334" alt="image" src="https://github.com/user-attachments/assets/b85a9bb5-ec63-4143-8c45-07890700a1ac" />
 
-## Normalisation Process - it involves the organisation of data into specific table structures, improving data integrity and minimising data redundancies (Gomstyn and Jonker, 2025).
+**Normalisation Process** - it involves the organisation of data into specific table structures, improving data integrity and minimising data redundancies (Gomstyn and Jonker, 2025).
 
-## First Normal Form (1NF) - it involves ensuring that each table has a primary key and each column is stored in an atomic value (Nguyen, 2023).
+**First Normal Form (1NF)** - it involves ensuring that each table has a primary key and each column is stored in an atomic value (Nguyen, 2023).
 
 In order to analyse the dependencies within the dataset, it was first necessary to identify a suitable primary key. No single attribute was capable of uniquely identifying each record. Instead, uniqueness was achieved through a combination of Student Number and Course Name, which together formed a composite key. This composite key provided the foundation for assessing how the remaining attributes depended on the identifying fields.
 
@@ -27,7 +27,7 @@ In order to analyse the dependencies within the dataset, it was first necessary 
 
 <img width="874" height="461" alt="image" src="https://github.com/user-attachments/assets/9bab2770-0907-4333-82f1-0b60bc6e6b35" />
 
-## Second Normal Form (2NF) - it involves the condition that each column is dependent on the key column (Nguyen, 2023).
+**Second Normal Form (2NF)** - it involves the condition that each column is dependent on the key column (Nguyen, 2023).
 
 The table failed to satisfy Second Normal Form (2NF) due to the presence of partial dependencies; for instance, student attributes such as name, date of birth, and support status were dependent solely on the Student Number. These partial dependencies could be rectified by a decomposition of the original table.
 
@@ -39,7 +39,7 @@ To resolve this issue, the dataset was divided into three separate relations, ea
 
 <img width="447" height="427" alt="image" src="https://github.com/user-attachments/assets/20728b15-9877-4bd3-867c-d5a0e6f6188d" />
 
-## Third Normal Form (3NF) - it requires no transitive dependencies between columns of the table (Nguyen, 2023).
+**Third Normal Form (3NF)** - it requires no transitive dependencies between columns of the table (Nguyen, 2023).
 
 Following this decomposition, the resulting tables were evaluated against the requirements of Third Normal Form (3NF). The Students table satisfied this condition, as all attributes were directly dependent on Student Number. The Courses table also met the criteria, with all attributes dependent solely on Course Name.
 
