@@ -5,6 +5,13 @@ subtitle: "This project demonstrates end-to-end data analysis using the UNICEF C
 categories: [Module 3 Deciphering Big Data]
 tags: [Python, SQL]
 ---
+
+The project allowed me to apply my previous knowledge of data cleaning while also gaining  experience on connecting to a PostgreSQL server. 
+I was able to create a database and upload the cleaned data, which gave me practical experience into the creation of a full workflow from data preparation to storage. 
+As my first experience working directly with a relational database, I found it extremely useful, and it has significantly improved my confidence and skills in managing data.
+
+Below the Project Created
+
 # Database Management
 
 [GitHub Repository](https://github.com/matt9891-stack/matt9891-stack.github.io/blob/main/_posts/2025-12-26-Relational_database%20_management.md)
