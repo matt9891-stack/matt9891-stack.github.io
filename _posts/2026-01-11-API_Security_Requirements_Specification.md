@@ -5,6 +5,14 @@ date: 2026-01-11
 categories: [Module 3 Deciphering Big Data]
 
 ---
+
+The project helped strengthen my understanding of APIs, their functions, and the different types available.
+It also allowed me to explore which API is best suited for specific contexts, as well as the challenges involved in using them effectively.
+
+This experience provided a valuable  understanding of integrating and managing APIs in real-world applications.
+
+Below is the Project Developed
+
 # API Security Requirements Specification
 
 An Application Programming Interface (API) allows different applications to communicate with  each other in a safe and controlled way. In cloud-based architectures, APIs have become essential for enabling data sharing, integration, and automation across platforms and programming languages, including Python-based applications (Iqbal, 2023).
