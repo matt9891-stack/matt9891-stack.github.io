@@ -6,6 +6,21 @@ categories: [Module 3 Deciphering Big Data]
 
 ---
 
+# Collaborative Discussion
+
+This collaborative discussion has been a valuable experience that allowed me to compare my research with different points of view and improve my understanding of data protection in the context of the EU and UK GDPR frameworks. 
+Engaging with my peers’ responses helped me look beyond the legal comparison and consider broader aspect of the two regulamentation such as Jurisdictional and Technological.
+
+I found very interesting the reflections on the gap between individuals’ awareness of privacy risks and their actual behaviour when sharing personal data, which adds an important societal perspective to regulatory effectiveness. 
+
+The contributions also improved my analysis by highlighting practical  measures such as encryption and pseudonymisation.
+
+Moreover, the discussion around AI and data protection, especially the need for clearer guidance and risk-aware implementation, highlighted how new technologies can challenge existing regulatory frameworks.
+
+Overall, the exchange of ideas strengthened my original work and showed how combining legal, technical, and human perspectives.
+
+Below my Initial and Summary Post
+
 # Initial Post
 
 In today’s digital environment, where information flows easily across borders, protecting personal data has become increasingly important. Data privacy regulations aim to safeguard personal information while balancing individual rights with the use of data for innovation (Bakare et al., 2024). In response, the European Union introduced the General Data Protection Regulation (GDPR) in May 2018 to harmonise data protection across Member States. After Brexit, the United Kingdom retained and adapted the GDPR framework, which came into effect in 2021, and closely follows the EU one while keeping the same core principles.
