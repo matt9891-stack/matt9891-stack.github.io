@@ -6,6 +6,16 @@ date: 2025-11-04
 categories: [Module 3 Deciphering Big Data]
 ---
 
+# Collaborative Discussion
+
+The collaborative discussion has been a valuable learning experience, as it allowed me to compare my research with different perspectives and broaden my understanding of the topic. Engaging with my peers’ contributions helped me see aspects I had not fully considered, particularly regarding the opportunities and challenges of IoT applications. I found the peer's contributions really insightful, emphasising the integration of IoT with advanced tools such as Deep Learning to improve system efficiency and performance. 
+In addition, the discussion around the implementation of GDPR principles to reduce risks, mitigate bias, and strengthen ethical data practices added an important governance perspective. 
+
+Overall, the feedback encouraged me to think more critically about ethics, governance and data quality. The exchange of ideas not only strengthened my original analysis but also highlighted the importance of different points of view when facing complex technological topics like IoT.
+
+Below is my initial and Summary Post
+
+---
 # Initial Post
 
 # IoT application – Opportunities and Challenges
