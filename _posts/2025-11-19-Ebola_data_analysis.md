@@ -5,6 +5,15 @@ subtitle: "Analysis of the Kaggle's Dataset of Ebola Outbreak in Western Africa 
 categories: [Module 3 Deciphering Big Data]
 tags: [Python]
 ---
+
+The task allowed me to practice  skills in data cleaning and formatting,  ensuring the accuracy and reliability of the dataset. 
+It was particularly interesting because I also had the opportunity to work with Python libraries such as Matplotlib and Seaborn, using them to visualise the Ebola dataset and uncover patterns and trends. 
+This hands-on experience reinforced my technical abilities in data preprocessing and visualization but also enhanced my understanding of how data can be transformed into useful insights. 
+
+Overall, it was a valuable exercise in combining data preparation with exploratory analysis.
+
+Below is the Project Developed
+
 #  Ebola Outbreak Dataset Analysis
  
 [GitHub Repository](https://github.com/matt9891-stack/matt9891-stack.github.io/blob/main/_posts/2025-11-19-Ebola_data_analysis.md)  
