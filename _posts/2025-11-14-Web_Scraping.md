@@ -6,6 +6,9 @@ categories: [Module 3 Deciphering Big Data]
 tags: [Python]
 ---
 
+The task provided a valuable opportunity to engage in a practical web scraping activity. Building on my previous experience with the topic, this exercise helped reinforce my existing knowledge and improve my confidence in applying these techniques.
+Below is the project developed.
+
 # Web_Scraping
 
 [GitHub Repository](https://github.com/matt9891-stack/matt9891-stack.github.io/blob/main/_posts/2025-11-14-Web_Scraping.md)
