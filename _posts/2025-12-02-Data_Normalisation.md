@@ -5,6 +5,11 @@ subtitle: "Overview of the Data Normalisation Process"
 categories: [Module 3 Deciphering Big Data]
 tags: [Python]
 ---
+The project was a great opportunity to apply the principles of normalisation, ensuring that datasets are in atomic form and reducing redundancy.
+This was an extremely valuable lesson, as it helped my understanding of proper data structuring, which will be very useful in my future career.
+
+Below is the Project Developed.
+
 # Overview of the Data Normalisation Process
 
 [GitHub Repository](https://github.com/matt9891-stack/matt9891-stack.github.io/blob/main/_posts/2025-12-02-Data_Normalisation.md)
