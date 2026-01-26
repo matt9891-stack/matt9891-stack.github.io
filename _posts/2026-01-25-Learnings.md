@@ -18,8 +18,8 @@ Moving forward, I aim to work with more complex datasets and apply predictive an
 
 In particular, I plan to undertake projects involving machine learning for predicting both categorical and numerical outcomes, utilising libraries such as SciPy and Scikit-learn to improve my practical expertise.
 
-My understanding of cybersecurity and systems and hardware is satisfactory. I have learned security principles, backup procedures, and basic computing system concepts, but I will  explore more advanced security techniques and improve my knowledge of system architecture.
+I have learned security principles, backup procedures, and basic computing system concepts, but I will  explore more advanced security techniques and improve my knowledge of system architecture.
 
-In terms of professional, legal, and ethical awareness, I have built a solid foundation in GDPR compliance and secure data handling, and I will continue to monitor developments in data protection regulations to ensure my knowledge remains current.
+In terms of professional, legal, and ethical awareness, I have built a good understanding of GDPR compliance and secure data handling, and I will continue to monitor developments in data protection regulations to ensure my knowledge remains current.
 
 <img width="666" height="565" alt="image" src="https://github.com/user-attachments/assets/ce958b51-5b67-4672-b41d-72bf73129489" />
