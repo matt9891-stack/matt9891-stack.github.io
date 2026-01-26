@@ -5,6 +5,15 @@ subtitle: "Comparative Work on Back-up Procedures."
 categories: [Module 3 Deciphering Big Data]
 tags: [Python]
 ---
+
+The project allowed me to deepen my understanding of backups by exploring the different types and their best use cases. 
+
+It also highlighted the GFR backup procedure, emphasising the benefits of a hierarchical and rotational approach for ensuring data security and reliability. 
+
+This experience provided valuable insight into effective data management practices.
+
+Below is the Project Developed
+
 # Back Up Procedure
 A database backup is used to create a copy of the original database in case data is lost. A database recovery strategy helps organisations restore data with accuracy and integrity (Ibm, 2025). 
 
