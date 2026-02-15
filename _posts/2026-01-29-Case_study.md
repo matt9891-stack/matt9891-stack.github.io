@@ -2,6 +2,7 @@
 layout: post
 title: "Case Study - Exploring corporate tax rate variation in the USA"
 subtitle: "Understanding the Chart: Corporate Tax Variation from New York Times"
+date: 2026-01-29
 categories: [Module 4 Visualising Data]
 ---
 
