@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ""Unit 4 Data Visualisation Learnings Activity""
+title: "Unit 4 Data Visualisation Learnings Activity"
 subtitle: "Book Exercises Python"
 date: 2026-02-20
 categories: [Module 3 Deciphering Big Data]
