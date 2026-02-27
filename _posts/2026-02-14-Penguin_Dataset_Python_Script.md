@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Data Visualisation Seminar Activity"
+title: "Unit 3 Data Visualisation Seminar Activity"
 subtitle: "Data Visualisation of Penguin Dataset using Python"
 date: 2026-02-14
 categories: [Module 4 Visualising Data]
