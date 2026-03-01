@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Unit 5 Data Visualisation Seminar Activity"
+title: "Unit 5 Data Visualisation Book Exercises"
 subtitle: "Tidying Data"
 date: 2026-03-01
 categories: [Module 4 Visualising Data]
@@ -274,5 +274,6 @@ This artefact demonstrates the use of R and the tidyverse to tidy, manipulate, a
 The examples reflect the principles of tidy data as presented in R for Data Science (Wickham and Grolemund, 2017), showcasing how to structure datasets for efficient analysis and interpretation.
 
 Reference
+
 Wickham, H. and Grolemund, G., 2017. R for Data Science. Sebastopol: O’Reilly Media. Available at: https://learning.oreilly.com/library/view/r-for-data/9781492097396/ch05.html#data-tidy-summary
 [Accessed 1 March 2026].
