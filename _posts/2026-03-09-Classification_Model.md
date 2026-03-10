@@ -10,6 +10,10 @@ tags: [Python,Matplotlib,seaborn,sklearn]
 
 [NOTEBOOK](https://github.com/matt9891-stack/Classification_model/blob/main/Classification.ipynb)
 
+# Logistic Regression
+
+This analysis aims to develop and evaluate a machine learning model capable of classifying breast tumours as malignant or benign using the Breast Cancer dataset available in the Scikit-learn library. Accurate early detection of malignant tumours is critical in medical diagnostics, as it enables timely treatment and significantly improves patient outcomes.
+
 ## 1) Load the dataset
 
 The Breast Cancer dataset was loaded and converted into a pandas DataFrame. Its structure was examined to determine the number of rows and columns, the presence of null values, and the data types of each column.
