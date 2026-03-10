@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Unit 4 Data Visualisation Classification Model"
+title: "Unit 6 Data Visualisation Classification Model"
 subtitle: "Logistic Regression model implementation"
 date: 2026-03-09
 categories: [Module 4 Data Visualisation]
