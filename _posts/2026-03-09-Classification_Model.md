@@ -5,7 +5,6 @@ subtitle: "Logistic Regression model implementation"
 date: 2026-03-09
 categories: [Module 4 Data Visualisation]
 tags: [Python,Matplotlib,seaborn,sklearn]
-
 ---
 
 [NOTEBOOK](https://github.com/matt9891-stack/Classification_model/blob/main/Classification.ipynb)
