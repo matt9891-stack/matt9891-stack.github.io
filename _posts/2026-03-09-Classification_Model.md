@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Unit 6 Data Visualisation Classification Model"
+title: "Unit 6 Data Viualisation Classification Model"
 subtitle: "Logistic Regression model implementation"
 date: 2026-03-09
-categories: [Module 4 Data Visualisation]
+categories: [Module 4 Visualising Data]
 tags: [Python,Matplotlib,seaborn,sklearn]
 ---
 
