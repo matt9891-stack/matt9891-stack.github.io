@@ -7,6 +7,8 @@ categories: [Module 4 Visualising Data]
 tags: [R]
 ---
 
+[PYTHON NOTEBOOK](https://github.com/matt9891-stack/PCA_Analysis/blob/main/PCA_decomposition.ipynb)
+
 # Principal Component Analysis (PCA) and SVD – Results Commentary
 
 This analysis explores the structure of the USArrests dataset using Principal Component Analysis (PCA) and Singular Value Decomposition (SVD), followed by an application of SVD for missing data imputation.
