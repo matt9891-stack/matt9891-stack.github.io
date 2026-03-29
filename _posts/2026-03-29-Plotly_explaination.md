@@ -107,7 +107,9 @@ By clearly labelling the x-axis as months and the y-axis as sales, and including
     if __name__ == "__main__":
         app.run(debug=True)
 
-<img width="1518" height="450" alt="newplot1" src="https://github.com/user-attachments/assets/bd67add3-ba98-4b88-9a0e-f495768f1094" />
+<img width="1518" height="450" alt="newplot1" src="https://github.com/user-attachments/assets/7a949380-f6a6-4238-9b8e-9ddb71780441" />
 
-<img width="1518" height="450" alt="newplot2" src="https://github.com/user-attachments/assets/61759c0b-20e1-460e-9645-fcf364fe6745" />
+<img width="1518" height="450" alt="newplot2" src="https://github.com/user-attachments/assets/d0e77e12-4b85-49e2-8acf-47052f3fc460" />
+
+
 
