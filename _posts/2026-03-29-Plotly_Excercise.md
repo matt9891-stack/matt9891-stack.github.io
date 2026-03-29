@@ -126,9 +126,11 @@ Return the completed figure to be displayed in the graph component
         
 # Run the Dash app directly within a Jupyter notebook cell
 
-<img width="1518" height="450" alt="newplot1" src="https://github.com/user-attachments/assets/e718f6cd-60cf-45de-bc6e-32f259dadb43" />
+<img width="1518" height="450" alt="newplot4" src="https://github.com/user-attachments/assets/bc714dca-7940-4591-950b-1ea26b1ae50a" />
 
-<img width="1518" height="450" alt="newplot2" src="https://github.com/user-attachments/assets/6cbe6179-8ca7-4738-8b7b-29d39b1ab935" />
+<img width="1518" height="450" alt="newplot5" src="https://github.com/user-attachments/assets/cfbc8608-ca95-49f9-80eb-267d8738a727" />
+
+
 
 
     
