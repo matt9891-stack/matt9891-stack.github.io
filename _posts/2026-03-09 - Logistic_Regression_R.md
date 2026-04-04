@@ -7,7 +7,7 @@ categories: [Module 4 Visualising Data]
 tags: [R]
 ---
 
-[NOTEBOOK]()
+[NOTEBOOK](https://github.com/matt9891-stack/Logistic_R/blob/main/SeminarLogistic%20Reg.R)
 
 ---
 # The Project
