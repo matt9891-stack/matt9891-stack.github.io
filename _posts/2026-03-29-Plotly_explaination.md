@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Unit 9 Plotly"
+title: "Unit 9 Plotly Exercise pt 1"
 subtitle: "Plotly Exercise."
 date: 2026-03-29
 categories: [Module 4 Visualising Data]
