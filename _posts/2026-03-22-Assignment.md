@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Unit 8 Marketing Campaign ML model"
+title: "Unit 8 Marketing Campaign ML model Assignment"
 subtitle: "Machine Learning models comparison"
 date: 2026-03-22
 categories: [Module 4 Visualising Data]
