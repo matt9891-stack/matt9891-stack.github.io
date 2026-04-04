@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Unit 7 Principal Component Analysis"
+title: "Unit 7 Principal Component Analysis R"
 subtitle: "PCA on USA arrests R"
 date: 2026-03-15
 categories: [Module 4 Visualising Data]
