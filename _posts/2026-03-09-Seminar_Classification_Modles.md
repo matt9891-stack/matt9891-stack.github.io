@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Unit 6 Classification Logistic Regression Random Forest"
+title: "Unit 6 Seminar Activity Python"
 subtitle: "Implementation of Classification Models for predicting the burnout levels in Students."
 date: 2026-03-09
 categories: [Module 4 Visualising Data]
