@@ -47,9 +47,15 @@ A bar plot or boxplot provides a clearer summary of distributions when dealing w
 
 ----------------------------------------------------------------------------------
 ## 4. Handling Missing Data
-Using na.rm = TRUE in geom_point() removed missing values silently.
-The default (FALSE) produces warnings.
+
+Using na.rm removed missing values silently.
+
+
+
+    na.rm = TRUE in geom_point() 
+    
 This reinforced the importance of handling NA values explicitly in visualisation workflows.
+
 ----------------------------------------------------------------------------------
 ## 5. Using labs() to Improve Readability
 The labs() function was used to add:
