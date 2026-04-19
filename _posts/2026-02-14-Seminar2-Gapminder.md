@@ -2,7 +2,7 @@
 layout: post
 title: "Seminar 2 Activity"
 subtitle: "Module 4 – Seminar 2 Gapminder"
-date: 2026-02-14
+date: 2026-02-13
 categories: [Module 4 Visualising Data]
 ---
 
