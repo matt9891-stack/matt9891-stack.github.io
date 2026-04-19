@@ -3,7 +3,7 @@ layout: post
 title: "Unit 4 Data Visualisation Learnings Activity"
 subtitle: "Book Exercises Python"
 date: 2026-02-20
-categories: [Module 3 Deciphering Big Data]
+categories: [Module 4 Visualising Data]
 tags: [Python,Matplotlib,seaborn]
 ---
 [PYTHON SCRIPT](https://github.com/matt9891-stack/Excercies/blob/main/Book_excercises.ipynb)
