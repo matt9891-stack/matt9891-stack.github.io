@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Unit 6 Seminar Activity Python"
-subtitle: "Implementation of Classification Models for predicting the burnout levels in Students."
+title: "Module 4 Seminar Activity 5"
+subtitle: "Seminar Activity 5 Classification Models for Predicting the burnout levels in Students."
 date: 2026-03-09
 categories: [Module 4 Visualising Data]
 tags: [Python,Matplotlib,seaborn,sklearn,Plotly]
