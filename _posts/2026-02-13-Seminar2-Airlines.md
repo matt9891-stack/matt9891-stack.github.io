@@ -2,7 +2,7 @@
 layout: post
 title: "Seminar Activity 2"
 subtitle: "Module 4 – Seminar 2 Airlines Analysis"
-date: 2025-12-13
+date: 2026-02-13
 categories: [Module 4 Visualising Data]
 ---
 
