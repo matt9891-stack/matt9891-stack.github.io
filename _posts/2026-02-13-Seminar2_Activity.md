@@ -2,7 +2,7 @@
 layout: post
 title: "Seminar 2 Activity"
 subtitle: "Module 4 – Seminar 2"
-date: 2025-12-13
+date: 2026-02-13
 categories: [Module 4 Visualising Data]
 ---
 
