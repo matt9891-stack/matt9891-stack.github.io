@@ -240,3 +240,14 @@ FacetGrid splits the plot into multiple subplots.
 col_wrap defines how many plots per row.
 
 Works similarly to ggplot2’s facet_wrap(~model_year).
+
+# Conclusion
+
+This guide demonstrates how data visualisation in Python, using Seaborn and Matplotlib, combines flexibility with expressive power. 
+Through progressively more complex examples, it becomes clear that effective visualisation is not simply about choosing the right plot type, but about understanding how different visual encodings—such as colour, size, and layout—can reveal patterns and relationships within the data.
+
+Working with the mpg dataset highlights how visual tools can support both exploration and communication. Simple scatterplots provide an initial understanding of relationships, while regression lines, distribution plots, and faceting allow deeper insights into structure, variation, and subgroup behaviour. At the same time, the guide also exposes some practical limitations, such as differences between functions like regplot() and lmplot(), encouraging a more thoughtful and informed use of the libraries.
+
+Overall, this work reflects the importance of combining technical skills with interpretative awareness. Seaborn simplifies many tasks, but meaningful visualisation still depends on deliberate choices and a clear understanding of the data. Developing this balance is key to producing graphics that are not only visually appealing but also accurate, insightful, and effective in communicating results.
+
+
