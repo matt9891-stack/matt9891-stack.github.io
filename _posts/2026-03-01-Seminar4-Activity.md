@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Unit 5 Data Visualisation Book Exercises"
-subtitle: "Tidying Data"
+title: "Seminar 4 Activity "
+subtitle: "Module 4 – Seminar 4"
 date: 2026-03-01
 categories: [Module 4 Visualising Data]
 tags: [R,tidyverse,tidyr,ggplot]
