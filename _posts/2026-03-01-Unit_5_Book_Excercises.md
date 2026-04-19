@@ -268,7 +268,7 @@ A small tibble is reshaped from wide to long format, demonstrating how multiple 
 
 Data from patient experience surveys is widened so that each measurement code becomes a separate column, showing the flexibility of tidyverse functions for both long-to-wide and wide-to-long transformations.
 
-Conclusion
+# Conclusion
 
 This artefact demonstrates the use of R and the tidyverse to tidy, manipulate, and visualise data. Techniques include creating new variables, summarising data, pivoting between wide and long formats, splitting combined columns, converting strings to numeric values, and producing clear visualisations. 
 The examples reflect the principles of tidy data as presented in R for Data Science (Wickham and Grolemund, 2017), showcasing how to structure datasets for efficient analysis and interpretation.
