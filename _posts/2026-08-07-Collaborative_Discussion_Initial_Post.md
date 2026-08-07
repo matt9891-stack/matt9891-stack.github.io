@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Collaborative Discussion Initial Post"
+title: "Collaborative Discussion Initial Post - Unit 1"
 subtitle: "Module 6 – Machine Learning - Collaborative Discussion"
 date: 2026-08-07
-categories: [Module 6 Machine Learning] - Unit 1
+categories: [Module 6 Machine Learning] 
 tags: 
 ---
 
