@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Exploratory Data Analysis Python - Unit 3"
-subtitle: "Module 6 – Machine Learning - Covariance"
+subtitle: "Module 6 – Machine Learning - Correlation"
 date: 2026-08-14
 categories: [Module 6 Machine Learning]
 tags: [EDA, Python]
