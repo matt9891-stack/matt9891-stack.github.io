@@ -408,3 +408,47 @@ Ideally, residuals should be distributed randomly around zero without a clear pa
 Patterns in the residuals may indicate that the linear model is not capturing some structure in the data. For example, a curved pattern could suggest a non-linear relationship, while increasing residual spread could indicate heteroscedasticity.
 
 Therefore, residual analysis is an important part of assessing whether a linear regression model is appropriate for the data.
+
+# Polynomial Regression
+
+Linear Regression assumes that the relationship between the predictors and the target can be represented by a linear function.
+
+However, real-world relationships are not always linear. Sometimes the relationship between two variables follows a curve.
+
+In this situation, a straight line may not describe the relationship particularly well.
+
+This is where Polynomial Regression can be useful.
+
+From Linear to Polynomial Regression
+
+A simple linear regression can be represented as:
+
+$$y = b1 + b1x$$
+
+Polynomial Regression extends this equation by adding powers of the predictor:
+
+$$y = b0 + b1x + b2x^2 + ... + bnx^n$$
+
+The degree of the polynomial determines the complexity of the curve.
+
+The degree controls how flexible the model can be.
+
+A degree 1 model is equivalent to ordinary linear regression:
+
+$$y = b1 + b1x$$
+
+A degree 2 model can produce a quadratic curve:
+
+$$y = b0 + b1x + b2x^2$$
+
+A degree 3 model can produce a more complex curve:
+
+$$y = b0 + b1x + b2x^2+b3X^3$$
+
+Increasing the degree gives the model more flexibility, but this does not necessarily make the model better.
+
+A very high polynomial degree can cause overfitting, where the model follows the training data too closely and performs poorly on new observations.
+
+Therefore, the polynomial degree should be treated as a model parameter that needs to be selected carefully.
+
+The right degree will then be selected finding the best cost effective decrease of error and increase of degree
