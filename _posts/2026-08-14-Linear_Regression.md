@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Exploratory Data Analysis Python - Unit 3"
+title: "Exploratory Data Analysis Python - Unit 4"
 subtitle: "Module 6 – Machine Learning - Linear Regression"
 date: 2026-08-14
 categories: [Module 6 Machine Learning]
