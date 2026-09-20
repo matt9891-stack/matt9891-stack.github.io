@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Exploratory Data Analysis Python - Unit 4"
+title: "Logistic Regression - Unit 4"
 subtitle: "Module 6 – Machine Learning - Logistic Regression"
 date: 2026-08-19
 categories: [Module 6 Machine Learning]
-tags: [EDA, Python]
+tags: [Python]
 ---
 
 # Logistic Regression
