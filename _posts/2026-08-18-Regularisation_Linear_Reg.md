@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Exploratory Data Analysis Python - Unit 4"
+title: "Regularisation - Unit 4"
 subtitle: "Module 6 – Machine Learning - Regularisation Linear Regression"
 date: 2026-08-18
 categories: [Module 6 Machine Learning]
-tags: [EDA, Python]
+tags: [Python]
 ---
 # Regularised Linear Regression
 
