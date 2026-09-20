@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Exploratory Data Analysis Python - Unit 4"
+title: "Cross Validation- Unit 4"
 subtitle: "Module 6 – Machine Learning - Cross Validation"
-date: 2026-08-16
+date: 2026-08-17
 categories: [Module 6 Machine Learning]
-tags: [EDA, Python]
+tags: [Python]
 ---
 # Cross-Validation
 
