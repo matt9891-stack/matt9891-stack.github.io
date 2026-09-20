@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Exploratory Data Analysis Python - Unit 3"
+title: "Correlation - Unit 3"
 subtitle: "Module 6 – Machine Learning - Correlation"
-date: 2026-08-14
+date: 2026-08-13
 categories: [Module 6 Machine Learning]
-tags: [EDA, Python]
+tags: [Python]
 ---
 
 # Pearson’s Correlation
