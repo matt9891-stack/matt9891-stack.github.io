@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Exploratory Data Analysis Python - Unit 4"
+title: "Linear Regression - Unit 4"
 subtitle: "Module 6 – Machine Learning - Linear Regression"
 date: 2026-08-14
 categories: [Module 6 Machine Learning]
-tags: [EDA, Python]
+tags: [Regression Model, Python]
 ---
 
 # Linear Regression
