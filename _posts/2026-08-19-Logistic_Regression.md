@@ -7,6 +7,8 @@ categories: [Module 6 Machine Learning]
 tags: [Python]
 ---
 
+[LR Notebook](https://github.com/matt9891-stack/ML_Projects/blob/02d34655bba5f4c4b12b25d610c5d153de0736c0/7%20Multiclass_LogReg.ipynb)
+
 # Logistic Regression
 
 Logistic Regression is a classification algorithm rather than a regression algorithm.
