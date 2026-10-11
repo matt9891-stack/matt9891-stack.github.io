@@ -7,6 +7,8 @@ categories: [Module 6 Machine Learning]
 tags: [Python]
 ---
 
+[Notebook CNN](https://github.com/matt9891-stack/ML_Projects/blob/6b41c5285d1d6bea83949df41db87efae684f393/CNN.ipynb)
+
 # Libraries
 
 TensorFlow provides the tools needed to load the CIFAR-10 dataset and build the Convolutional Neural Network. NumPy is used to perform numerical operations on the data, while Matplotlib allows images and charts to be displayed.
