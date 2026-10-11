@@ -7,7 +7,7 @@ categories: [Module 6 Machine Learning]
 tags: [Python]
 ---
 
-[Correlation Notebook](https://github.com/matt9891-stack/ML_Projects/blob/main/3%20Correlation.ipynb)
+[Correlation Notebook](https://github.com/matt9891-stack/ML_Projects/blob/4e7cd87b645d290bf30a8aa38a24567485b7795a/3%20Correlation.ipynb)
 
 # Pearson’s Correlation
 
