@@ -7,6 +7,8 @@ categories: [Module 6 Machine Learning]
 tags: [Python]
 ---
 
+[Correlation Notebook](https://github.com/matt9891-stack/ML_Projects/blob/main/3%20Correlation.ipynb)
+
 # Pearson’s Correlation
 
 Pearson’s correlation is a statistical measure used to describe the strength and direction of the linear relationship between two numerical variables.
