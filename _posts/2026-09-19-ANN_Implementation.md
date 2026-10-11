@@ -7,7 +7,7 @@ categories: [Module 6 Machine Learning]
 tags: [Python]
 ---
 
-[Notebook ANN](https://github.com/matt9891-stack/ML_Projects/blob/bb257c7bdafbb8ce05f0e018c59ecc87a72016e9/10%20ANN_implementation.ipynb)
+[Notebook ANN](https://github.com/matt9891-stack/ML_Projects/blob/1021bb597c5a2ca7e1af7b8f248891e1df46b774/11%20ANN_implementation.ipynb)
 
 # Artificial Neural Network
 
