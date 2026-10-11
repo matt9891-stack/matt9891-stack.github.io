@@ -6,6 +6,8 @@ date: 2026-08-17
 categories: [Module 6 Machine Learning]
 tags: [Python]
 ---
+[Notebook Cross Validation](https://github.com/matt9891-stack/ML_Projects/blob/c71baa7aa4f4ed7e3d85ec881e6337f19396d0de/6%20Cross_Validation.ipynb)
+
 # Cross-Validation
 
 When building a machine learning model, it is important to know whether the model can generalise to unseen data.
