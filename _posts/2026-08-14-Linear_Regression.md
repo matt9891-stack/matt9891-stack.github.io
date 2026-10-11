@@ -6,6 +6,7 @@ date: 2026-08-14
 categories: [Module 6 Machine Learning]
 tags: [Regression Model, Python]
 ---
+[Notebook Linear Regression](https://github.com/matt9891-stack/ML_Projects/blob/b26f19f23492f2e106448a1114ebf4ab7d5d53fb/4%20Linear_regression.ipynb)
 
 # Linear Regression
 
