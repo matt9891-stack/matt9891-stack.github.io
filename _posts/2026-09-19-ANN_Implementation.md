@@ -7,6 +7,8 @@ categories: [Module 6 Machine Learning]
 tags: [Python]
 ---
 
+[Notebook ANN](https://github.com/matt9891-stack/ML_Projects/blob/bb257c7bdafbb8ce05f0e018c59ecc87a72016e9/10%20ANN_implementation.ipynb)
+
 # Artificial Neural Network
 
 The following example demonstrates how to build an Artificial Neural Network for a binary classification problem using the Titanic dataset.
