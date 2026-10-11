@@ -6,6 +6,7 @@ date: 2026-08-15
 categories: [Module 6 Machine Learning]
 tags: [Python]
 ---
+[Notebook Poly Regression](https://github.com/matt9891-stack/ML_Projects/blob/d753d5518a9dce873e1f784fd560280aa4dbdd70/5%20Polynomial_regression.ipynb)
 
 # Polynomial Regression
 
