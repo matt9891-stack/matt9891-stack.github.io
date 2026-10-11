@@ -6,6 +6,7 @@ date: 2026-09-01
 categories: [Module 6 Machine Learning] 
 tags: [Python]
 ---
+[Notebook Clustering](https://github.com/matt9891-stack/ML_Projects/blob/599ed05accbc62732be08f0cf7b012423a508073/9%20Iris_clustering.ipynb)
 
 # K-Means Clustering
 
