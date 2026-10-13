@@ -11,32 +11,28 @@ tags: [Python]
 
 # Logistic Regression
 
-Logistic Regression is a classification algorithm rather than a regression algorithm.
-
-Linear Regression predicts a continuous numerical value, while Logistic Regression predicts the probability that an observation belongs to a particular class.
+Logistic Regression is a classification algorithm used to predict the probability that an observation belongs to a particular class.
 
 For binary classification, the model predicts the probability of belonging to one of two classes.
 
 For example:
 
-0 → Not purchased
-1 → Purchased
+0:  Not purchased
+1: Purchased
 
 The Logistic Regression model uses the sigmoid function to convert the model's output into a probability between 0 and 1.
 
-The predicted probability can then be converted into a class.
+Then the predicted probability can then be converted into a class.
 
-For example, for a Probability = 0.82 there will be a Predicted class = 1
+For example, for a probability of 0.82 there will be a predicted class 1, while a lower probability, for instance 0.49, will be classified as belonging to class 0
 
 For a binary classification problem, the sigmoid function is:
 
-$$
-\sigma(z)=\frac{1}{1+e^{-z}}
-$$
+<img width="306" height="123" alt="image" src="https://github.com/user-attachments/assets/9f398c73-fe85-4c49-a0dc-a436f70764a4" />
 
 # Multiclass Logistic Regression
 
-Logistic Regression can also be used when there are more than two possible classes.
+Logistic Regression can also be used when there are more than two possible classes in something called multiclass classification problem.
 
 For example, the Iris dataset contains three species:
 
@@ -44,11 +40,9 @@ setosa
 versicolor
 virginica
 
-Therefore, this is a multiclass classification problem.
-
 Instead of predicting a continuous value, the model estimates the probability of each class.
 
-Loading the Dataset
+### Loading the Dataset
 
 We use the Iris dataset for this example.
 
