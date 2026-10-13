@@ -6,7 +6,7 @@ date: 2026-08-17
 categories: [Module 6 Machine Learning]
 tags: [Python]
 ---
-[Notebook Cross Validation](https://github.com/matt9891-stack/ML_Projects/blob/c71baa7aa4f4ed7e3d85ec881e6337f19396d0de/6%20Cross_Validation.ipynb)
+[Notebook Cross Validation](https://github.com/matt9891-stack/ML_Projects/blob/875ae1383312e2450fadfcda6e1e1974b95ba2d6/6%20Cross_Validation.ipynb)
 
 # Cross-Validation
 
