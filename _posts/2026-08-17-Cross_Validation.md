@@ -12,30 +12,17 @@ tags: [Python]
 
 When building a machine learning model, it is important to know whether the model can generalise to unseen data.
 
-A common approach is to divide the dataset into a training set and a test set.
+A common approach is to divide the dataset into a training set and a test set, however, a single train-test split has limitations, for instance, the performance of the model depends on the particular observations that were selected for the training and test sets.
 
-However, a single train-test split has a limitation: the performance of the model depends on the particular observations that were selected for the training and test sets.
-
-For example, one split might produce an RMSE of 2.1, while another possible split might produce an RMSE of 1.8.
-
-Cross-Validation reduces this dependency by repeatedly training and validating the model on different subsets of the data.
-
-It is therefore particularly useful when comparing models, selecting model parameters and estimating how well a model is likely to generalise.
+Cross-Validation reduces this dependency by repeatedly training and validating the model on different subsets of the data and it is therefore particularly useful when comparing models, selecting model parameters and estimating how well a model is likely to generalise.
 
 # How does Cross-Validation work
 
-One of the most common approaches is K-Fold Cross-Validation.
+K-Fold Cross-Validation, with 5-Fold Cross-Validation, divides the dataset into five approximately equal parts called folds.
 
-With 5-Fold Cross-Validation, the dataset is divided into five approximately equal parts called folds.
+The model is then trained five times, and, during each iteration, four folds are used for training, and one fold is used for validation.
 
-The model is trained five times.
-
-During each iteration:
-
-four folds are used for training;
-one fold is used for validation.
-
-The validation fold changes each time.
+The validation fold changes each time following the below schema.
 
 Iteration 1
 Training:   Fold 2 + 3 + 4 + 5
@@ -67,25 +54,19 @@ The five iteration performance scores are then averaged.
 
 The first important use is comparing different models.
 
-For example, to evaluate different candidate models:
-
 Linear Regression
 Random Forest
 Polynomial Regression
 
-We can use the same Cross-Validation procedure for each model.
+We can use the same Cross-Validation procedure for each model, and then assess their averaged performance metrics.
 
-For example:
-
-Linear Regression      → RMSE = 2.10
-Random Forest          → RMSE = 1.65
-Polynomial Regression  → RMSE = 1.82
+Linear Regression : RMSE
+Random Forest : RMSE
+Polynomial Regression: RMSE 
 
 The scores provide a more consistent basis for comparing the models because each model has been evaluated across multiple validation folds.
 
 The model with the lower RMSE has produced smaller prediction errors on average across the validation folds.
-
-Cross-Validation is therefore useful for model selection.
 
 # Python Implementation - Model Selection
 
@@ -142,11 +123,9 @@ Cross-Validation is therefore useful for model selection.
 
 # 2. Hyperparameters Tuning
 
-A second important use is selecting the best hyperparameters.
+A second important use is selecting the best hyperparameters before training the model.
 
-Hyperparameters are settings chosen before training the model.
-
-For example, in Polynomial Regression, the polynomial degree is a hyperparameter:
+For example, in Polynomial Regression, the polynomial degree is an hyperparameter:
 
 degree = 1
 degree = 2
@@ -173,7 +152,7 @@ We can use Cross-Validation to evaluate each degree.
     
       cv_scores[d] = rmse
 
-In cv=5 means that we are using 5-Fold Cross-Validation.
+cv=5 means that we are using 5-Fold Cross-Validation.
 
 The process is repeated for every polynomial degree from 1 to 10.
 
@@ -184,8 +163,6 @@ The process is repeated for every polynomial degree from 1 to 10.
 <img width="119" height="29" alt="image" src="https://github.com/user-attachments/assets/cfa566ac-c2ed-4c0d-8491-83f87a137ab8" />
 
 This means that, among the degrees tested, degree 4 produced the lowest average cross-validated RMSE.
-
-Therefore, Cross-Validation has helped us tune the polynomial degree.
 
 # 3. Estimating Generalisation Performance
 
