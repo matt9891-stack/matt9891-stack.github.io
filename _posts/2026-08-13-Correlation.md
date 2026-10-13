@@ -38,7 +38,7 @@ Covariance measures whether two variables tend to change together.
 
 The sample covariance is calculated as:
 
-$r = \frac{\text{Cov}(X,Y)}{s_x \times s_y}$
+<img width="223" height="57" alt="image" src="https://github.com/user-attachments/assets/a97ba6c9-168f-492d-a37c-2f826181a3e7" />
 
 The formula compares each value with its variable's mean.
 
@@ -61,13 +61,11 @@ Pearson’s correlation solves this problem by standardising the covariance usin
 
 The formula is:
 
-
-$r=\frac{Cov(X,Y)}{s_Xs_Y}$
+<img width="126" height="62" alt="image" src="https://github.com/user-attachments/assets/d427738d-ee83-4295-a17a-2796aff6410c" />
   
-
 where:
 
-Cov(X,Y) is the covariance between the two variables.
+Sxy is the covariance between the two variables.
 sX is the standard deviation of X.
 sY is the standard deviation of Y.
 
