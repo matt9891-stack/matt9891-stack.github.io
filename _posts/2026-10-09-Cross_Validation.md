@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Cross Validation- Unit 4"
+title: "Cross Validation- Unit 11"
 subtitle: "Module 6 – Machine Learning - Cross Validation"
-date: 2026-08-17
+date: 2026-10-09
 categories: [Module 6 Machine Learning]
 tags: [Python]
 ---
