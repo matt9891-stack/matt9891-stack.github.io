@@ -22,9 +22,10 @@ TensorFlow provides the tools needed to load the CIFAR-10 dataset and build the 
 
 # Loading the CIFAR-10 Dataset
 
-The CIFAR-10 dataset is a commonly used dataset for image classification tasks. It contains 60,000 colour images divided into ten different classes, including aeroplanes, cars, birds, cats and dogs. Each image has a resolution of 32 × 32 pixels and contains three colour channels: red, green and blue (RGB).
+The CIFAR-10 dataset is a commonly used dataset for image classification tasks containing 60,000 colour images divided into ten different classes, including aeroplanes, cars, birds, cats and dogs. 
+Each image has a resolution of 32 × 32 pixels and contains three colour channels red, green and blue (RGB).
 
-TensorFlow provides a built-in function to load this dataset. The function returns two groups of data: a training dataset and a test dataset.
+TensorFlow provides a built-in function to load this dataset, which returns a training dataset and a test dataset.
 
     # Load the CIFAR-10 dataset
     dataset = tf.keras.datasets.cifar10.load_data()
@@ -32,15 +33,15 @@ TensorFlow provides a built-in function to load this dataset. The function retur
     # Split the dataset into training and test sets
     (x_train, y_train), (x_test, y_test) = dataset
 
-The variables x_train and x_test contain the images used for training and testing the model, respectively. The variables y_train and y_test contain the corresponding labels, which identify the class associated with each image.
+The variables x_train and x_test contain the images used for training and testing the model, and variables y_train and y_test contain the corresponding labels, which identify the class associated with each image.
 
-Separating the dataset into training and test sets is important because the model needs to learn patterns from one group of images and then be evaluated on images that were not used during training. This helps assess whether the model can generalise its predictions to previously unseen data.
+Separating the dataset into training and test sets is important because the model needs to learn patterns from one group of images and then be evaluated on images that were not used during training and this helps assess whether the model can generalise its predictions to previously unseen data.
 
 # Checking the Number of Images
 
-The training dataset contains 50,000 images, while the test dataset contains 10,000 images. This means that approximately 83.3% of the images are allocated to training and 16.7% to testing.
+The training dataset contains 50,000 images, while the test dataset contains 10,000 images which means that approximately 83.3% of the images are allocated to training and 16.7% to testing.
 
-Checking the number of records is a basic data validation step. It confirms that the dataset has been loaded correctly and provides an initial understanding of the amount of data available to train and evaluate the CNN.
+Checking the number of records is a basic data validation step that confirms that the dataset has been loaded correctly and provides an initial understanding of the amount of data available to train and evaluate the CNN.
 
     print("Number of training images:", len(x_train))
     print("Number of training labels:", len(y_train))
@@ -68,7 +69,9 @@ The label arrays have shapes (50000, 1) and (10000, 1). Each image has one corre
 
 # Defining the Class Names
 
-The CIFAR-10 labels are represented by integer values from 0 to 9 rather than by descriptive class names. To make the labels easier to interpret, a list containing the ten class names can be created.
+The CIFAR-10 labels are represented by integer values from 0 to 9 rather than by descriptive class names.
+
+To make the labels easier to interpret, a list containing the ten class names can be created.
 
     class_names = [
         "Airplane",
@@ -88,9 +91,9 @@ The CIFAR-10 labels are represented by integer values from 0 to 9 rather than by
 
 <img width="212" height="58" alt="image" src="https://github.com/user-attachments/assets/f716e888-80f0-4d61-8316-184d67c9311f" />
 
-The position of each class in the list corresponds to its numerical label. For example, label 0 represents an aeroplane, while label 3 represents a cat.
+The position of each class in the list corresponds to its numerical label, for instance, label 0 represents an aeroplane, while label 3 represents a cat.
 
-This mapping is useful when exploring the dataset and interpreting the model's predictions. Instead of displaying a numerical value, the code can show the corresponding class name, making the results easier to understand.
+This mapping is useful when exploring the dataset and interpreting the model's predictions, as instead of displaying a numerical value, the code can show the corresponding class name, making the results easier to understand.
 
 # Inspecting an Individual Image
 
@@ -108,11 +111,15 @@ This mapping is useful when exploring the dataset and interpreting the model's p
 
 <img width="389" height="411" alt="image" src="https://github.com/user-attachments/assets/474f4744-7ec7-4b06-843a-3b99914b987a" />
 
-The expression x_train[0] selects the first image in the training dataset. Similarly, y_train[0][0] retrieves the numerical label associated with that image. The class name is obtained by using this label as an index in the class_names list.
+The expression x_train[0] selects the first image in the training dataset while y_train[0][0] retrieves the numerical label associated with that image. 
 
-The function plt.imshow() displays the image, while plt.title() adds the corresponding class name above it. The command plt.axis("off") removes the axis markings because they are not necessary for this visual inspection.
+The class name is obtained by using this label as an index in the class_names list.
 
-This step allows the image and its label to be checked together. It provides a simple way to confirm that the images can be displayed correctly and that their labels can be interpreted.
+The function plt.imshow() displays the image, while plt.title() adds the corresponding class name above it. 
+
+The command plt.axis("off") removes the axis markings because they are not necessary for this visual inspection allowing the image and its label to be checked together. 
+
+It provides a simple way to confirm that the images can be displayed correctly and that their labels can be interpreted.
 
 # Visualising Multiple Images
 
@@ -137,7 +144,9 @@ This step allows the image and its label to be checked together. It provides a s
 
 The function plt.figure() defines the overall size of the visualisation. The loop then selects the first 20 images from the training dataset. For each iteration, plt.subplot(4, 5, i + 1) creates a position within a grid containing four rows and five columns.
 
-The selected image is displayed in its position, and its corresponding class name is used as the title. The i + 1 expression is required because Matplotlib numbers subplot positions starting from 1, whereas Python indexes arrays starting from 0.
+The selected image is displayed in its position, and its corresponding class name is used as the title. 
+
+The i + 1 expression is required because Matplotlib numbers subplot positions starting from 1, whereas Python indexes arrays starting from 0.
 
 Finally, plt.tight_layout() adjusts the spacing between the images to reduce overlap between titles and neighbouring plots.
 
@@ -155,7 +164,9 @@ Each pixel in a colour image contains three values corresponding to its red, gre
 
 The data type indicates how the pixel values are stored, while the minimum and maximum functions show the range of values present in the training images.
 
-A value of 0 represents the minimum intensity for a colour channel, whereas 255 represents the maximum intensity. Different combinations of these values produce the colours visible in the images.
+A value of 0 represents the minimum intensity for a colour channel, whereas 255 represents the maximum intensity. 
+
+Different combinations of these values produce the colours visible in the images.
 
 Examining the pixel values is important because the data must be prepared appropriately before it is passed to the neural network. In particular, the original values have a relatively large numerical range compared with the normalised values commonly used when training neural networks.
 
