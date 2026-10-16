@@ -10,9 +10,10 @@ tags: [Python]
 
 # K-Means Clustering
 
-Clustering is an unsupervised machine learning technique that partitions a dataset into distinct groups (called clusters) so observations within the same group are highly similar, while observations in different groups are clearly distinct.
-Unlike supervised learning, clustering operates on unlabeled data—there is no target variable ($y$) guiding the algorithm. 
-Instead, it discovers inherent patterns and structural relationships directly from the input features ($X$).
+Clustering is an unsupervised machine learning technique that partitions a dataset into distinct groups (called clusters), so observations within the same group are highly similar, while observations in different groups are clearly distinct.
+
+Unlike supervised learning, clustering operates on unlabeled data where there is no target variable (y) guiding the algorithm. 
+Instead, it discovers inner patterns and structural relationships directly from the input features (X).
 
 # Key Applications
 
@@ -32,31 +33,29 @@ The cluster boundaries are crisp and mutually exclusive.
 
 Example:
 
-Customer $A \in \text{Cluster 1}$, Customer $B \in \text{Cluster 2}$.
+<img width="365" height="48" alt="image" src="https://github.com/user-attachments/assets/49d7c6e5-f7e8-4438-822f-21d5c156f2cc" />
 
 Representative Algorithm: K-Means.
 
-## 2. Overlapping (Fuzzy / Soft) Clustering where an observation can hold partial membership across multiple clusters, expressed as a set of probability distributions or degree values summing to $1$.
+## 2. Overlapping (Fuzzy / Soft) Clustering where an observation can hold partial membership across multiple clusters, expressed as a set of probability distributions or degree values summing to 1.
 
-Example: A news article can belong to $60\%$ Sports and $40\%$ Business.
+Example: A news article can belong to 60 Sports and 40 Business.
 
-Representative Algorithm: Fuzzy C-Means (FCM), Gaussian Mixture Models (GMM).
+Representative Algorithms: Fuzzy C-Means (FCM), Gaussian Mixture Models (GMM).
 
 ## 3. Hierarchical Clustering, which constructs a tree-like hierarchy of nested clusters (represented via a Dendrogram). 
 
 Does not require pre-specifying the number of clusters.
 
-It can be Agglomerative when it starts with every point as its own cluster and recursively merging the closest pairs.
-
-Or, Divisive (Top-Down): Starts with all points in one cluster and recursively splits them.
+It can be agglomerative, when it starts with every point as its own cluster and recursively merges the closest pairs, or divisive (Top-Down), which starts with all points in one cluster and recursively splits them.
 
 # The Core Concept of  Centroid
 
-A centroid serves as the mathematical centre and geometric representative of a cluster. It is calculated as the mean position of all data points belonging to that specific cluster across all dimensions.
+A centroid serves as the mathematical centre and geometric representative of a cluster. 
 
-$$
-\mathbf{\mu}_k = \frac{1}{N_k} \sum_{\mathbf{x}_i \in C_k} \mathbf{x}_i
-$$
+It is calculated as the mean position of all data points belonging to that specific cluster across all dimensions.
+
+<img width="199" height="69" alt="image" src="https://github.com/user-attachments/assets/194609f0-7206-4c5e-8bad-2538dea97ba0" />
 
 For example, if a cluster contains three points:
 
@@ -80,7 +79,7 @@ In conclusion, **clustering** is an unsupervised learning technique used to disc
 
 The algorithm works by measuring similarities between data points across feature space, aiming to maximise internal homogeneity while maintaining distinct boundaries between groups.
 
-While several clustering approaches exist—ranging from soft probabilistic models like GMMs to structural dendrograms in Hierarchical clustering—the most widely used method is **K-Means**. 
+While several clustering approaches exist, ranging from soft probabilistic models like GMMs to structural dendrograms in Hierarchical clustering, the most widely used method is **K-Means**. 
 
 It achieves efficiency by iteratively updating cluster **centroids** to minimise intra-cluster variance (WCSS). 
 
