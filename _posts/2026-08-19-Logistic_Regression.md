@@ -11,18 +11,14 @@ tags: [Python]
 
 # Logistic Regression
 
-Logistic Regression is a classification algorithm used to predict the probability that an observation belongs to a particular class.
-
-For binary classification, the model predicts the probability of belonging to one of two classes.
+Logistic Regression is a classification algorithm used to predict the probability that an observation belongs to a particular class, predicting the probability of belonging to one of two classes.
 
 For example:
 
 0:  Not purchased
 1: Purchased
 
-The Logistic Regression model uses the sigmoid function to convert the model's output into a probability between 0 and 1.
-
-Then the predicted probability can then be converted into a class.
+The Logistic Regression model uses the sigmoid function to convert the model's output into a probability between 0 and 1, and then the predicted probability can then be converted into a class.
 
 For example, for a probability of 0.82 there will be a predicted class 1, while a lower probability, for instance 0.49, will be classified as belonging to class 0
 
@@ -32,7 +28,7 @@ For a binary classification problem, the sigmoid function is:
 
 # Multiclass Logistic Regression
 
-Logistic Regression can also be used when there are more than two possible classes in something called multiclass classification problem.
+Logistic Regression can also be used when there are more than two possible classes in something called a multiclass classification problem.
 
 For example, the Iris dataset contains three species:
 
@@ -64,7 +60,7 @@ We can inspect the structure of the dataset:
 
 <img width="352" height="195" alt="image" src="https://github.com/user-attachments/assets/727f9b1b-f004-4fb7-85eb-2fa6885d955d" />
 
-I can also check the possible target classes:
+We can also check the possible target classes:
 
     df['species'].unique()
 
@@ -76,11 +72,9 @@ setosa
 versicolor
 virginica
 
-Therefore, this is a multiclass classification problem.
-
 # Defining Features and Target
 
-As with the regression models, We first separate the predictors from the target.
+As with the regression models, we first separate the predictors from the target.
 
     X = df.drop('species', axis=1)
     
@@ -116,9 +110,7 @@ Logistic Regression uses coefficients and regularisation, so feature scaling is 
     
     X_test_scaled = scaler.transform(X_test)
 
-The scaler is fitted only on the training data, while the test data is then transformed using the same scaling parameters.
-
-This prevents information from the test set from being used during preprocessing.
+The scaler is fitted only on the training data, while the test data is then transformed using the same scaling parameters, preventing information from the test set from being used during preprocessing.
 
 # Hyperparameter Tuning
 
@@ -132,32 +124,21 @@ This is useful because the performance of Logistic Regression can depend on sett
 
 The objective is to identify a combination that performs well using Cross-Validation.
 
-# The C Parameter
+*The C Parameter* controls the strength of regularisation, where:
 
-C controls the strength of regularisation, where:
+Small C is Stronger regularisation and more restriction on coefficients
 
-Small C:
-Stronger regularisation and more restriction on coefficients
-
-Large C: Weaker regularisation and Less restriction on coefficients
+Large C is Weaker regularisation and Less restriction on coefficients
 
 A very small C can make the model too simple, while a very large C allows the model to fit the training data more closely.
 
-# The penalty Parameter
+*The penalty Parameter* determines the type of regularisation.
 
-The penalty determines the type of regularisation.
+L1: Lasso-style regularisation, which can force some coefficients to zero and therefore perform feature selection.
 
-L1: Lasso-style regularisation
+L2: Ridge-style regularisation, which shrinks coefficients but normally does not force them exactly to zero.
 
-It can force some coefficients to zero and therefore perform feature selection.
-
-L2: Ridge-style regularisation
-
-It shrinks coefficients but normally does not force them exactly to zero.
-
-# The solver Parameter
-
-The solver is the optimisation algorithm used to find the model coefficients.
+*The solver Parameter* is the optimisation algorithm used to find the model coefficients.
 
 Different solvers support different regularisation options.
 
@@ -172,7 +153,7 @@ The important point is that the chosen solver must support the selected penalty.
 
 # GridSearchCV
 
-We can now create the parameter grid to find the best parameter for the model.
+It allows to find the best parameter for the model.
 
     from sklearn.model_selection import GridSearchCV
     from sklearn.linear_model import LogisticRegression
@@ -191,7 +172,7 @@ GridSearchCV will test the combinations of these parameters.
         max_iter=5000
     )
 
-I then create the GridSearchCV object:
+We then create the GridSearchCV object:
 
     grid = GridSearchCV(
         logistic_model,
@@ -217,7 +198,7 @@ n_jobs=-1 allows Scikit-learn to use all available CPU cores.
 
 One advantage of GridSearchCV is that it automatically stores the best model.
 
-I can access it using:
+We can access it using:
 
     best_model = grid.best_estimator_
 
@@ -236,7 +217,7 @@ For classification, accuracy is one possible evaluation metric.
         y_test
     )
     
-print(f'{accuracy:.3f}')
+    print(f'{accuracy:.3f}')
 
 <img width="150" height="25" alt="image" src="https://github.com/user-attachments/assets/899164ad-7269-4b93-a2d6-caa289afb170" />
 
@@ -244,7 +225,7 @@ print(f'{accuracy:.3f}')
 
 Accuracy alone does not provide information about the performance for each individual class.
 
-I can therefore use a classification report.
+We can therefore use a classification report.
 
     from sklearn.metrics import classification_report
 
@@ -259,11 +240,11 @@ I can therefore use a classification report.
 
 ### Precision
 
-Of the observations predicted as a particular class, how many actually belonged to that class?
+Of the observations predicted as a particular class, how many actually belonged to that class
 
 ### Recall
 
-Of the observations that actually belonged to a particular class, how many did the model identify correctly?
+Of the observations that actually belonged to a particular class, how many did the model identify correctly
 
 ### F1-score
 
@@ -277,7 +258,7 @@ The number of observations belonging to each class in the test set.
 
 A confusion matrix provides a visual way to understand the classification errors.
 
-from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+    from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 
     cm = confusion_matrix(
         y_test,
@@ -299,9 +280,7 @@ We can also display the matrix
 
 <img width="513" height="389" alt="image" src="https://github.com/user-attachments/assets/4da700f1-77b5-43cc-8bb0-ea1437871f3e" />
 
-For a three-class problem, the matrix contains three rows and three columns.
-
-The diagonal represents correctly classified observations.
+For a three-class problem, the matrix contains three rows and three columns, where the diagonal represents correctly classified observations.
 
 The off-diagonal cells represent classification errors.
 
