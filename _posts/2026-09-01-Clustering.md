@@ -31,8 +31,6 @@ Instead, it discovers inner patterns and structural relationships directly from 
 
 The cluster boundaries are crisp and mutually exclusive.
 
-Example:
-
 <img width="365" height="48" alt="image" src="https://github.com/user-attachments/assets/49d7c6e5-f7e8-4438-822f-21d5c156f2cc" />
 
 Representative Algorithm: K-Means.
