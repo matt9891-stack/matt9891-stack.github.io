@@ -18,11 +18,9 @@ Cross-Validation reduces this dependency by repeatedly training and validating t
 
 # How does Cross-Validation work
 
-K-Fold Cross-Validation, with 5-Fold Cross-Validation, divides the dataset into five approximately equal parts called folds.
+K-Fold Cross-Validation, with 5-Fold Cross-Validation, divides the dataset into five approximately equal parts called folds and the model is then trained five times, and, during each iteration, four folds are used for training, and one fold is used for validation.
 
-The model is then trained five times, and, during each iteration, four folds are used for training, and one fold is used for validation.
-
-The validation fold changes each time following the below schema.
+The validation fold changes each time following the schema below.
 
 Iteration 1
 Training:   Fold 2 + 3 + 4 + 5
