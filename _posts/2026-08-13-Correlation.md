@@ -13,7 +13,7 @@ tags: [Python]
 
 Pearson’s correlation is a statistical measure used to describe the strength and direction of the linear relationship between two numerical variables.
 
-In this example, I use Study Hours and Exam Score to understand whether students who study more hours tend to achieve higher exam scores.
+In this example, we use Study Hours and Exam Score to understand whether students who study more hours tend to achieve higher exam scores.
 
     import numpy as np
     import matplotlib.pyplot as plt
@@ -32,17 +32,11 @@ Each position in the two arrays represents one student.
 
 # 2. Covariance
 
-Before calculating Pearson’s correlation, it is useful to understand covariance.
-
-Covariance measures whether two variables tend to change together.
-
-The sample covariance is calculated as:
+Covariance measures whether two variables tend to change together and it is calculated as:
 
 <img width="223" height="57" alt="image" src="https://github.com/user-attachments/assets/a97ba6c9-168f-492d-a37c-2f826181a3e7" />
 
-The formula compares each value with its variable's mean.
-
-If both values are above or both are below their means, their contribution is positive.
+The formula compares each value with its variable's mean, where, if both values are above or both are below their means, their contribution is positive.
 If one value is above its mean and the other is below, their contribution is negative.
 
 Therefore, a positive covariance indicates that the two variables tend to increase together, while a negative covariance indicates that when one increases, the other tends to decrease.
@@ -113,7 +107,7 @@ A scatter plot can be used to visualise the relationship between the two variabl
 
 The result can be interpreted by considering both the direction and the strength of the correlation.
 
-For this dataset, Pearson’s correlation is strongly positive which means that higher study hours are associated with higher exam scores in the sample.
+For this dataset, Pearson’s correlation is strongly positive, which means that higher study hours are associated with higher exam scores in the sample.
 
 However, correlation does not necessarily mean causation as a positive correlation does not prove that studying more hours directly causes a higher exam score. 
 
