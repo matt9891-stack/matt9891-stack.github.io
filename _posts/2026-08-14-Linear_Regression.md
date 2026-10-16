@@ -10,9 +10,7 @@ tags: [Regression Model, Python]
 
 # Linear Regression
 
-Linear Regression is a supervised learning and statistical method used to model the relationship between a dependent variable (Y) and one or more independent variables (X).
-
-The main objective is to use the values of the independent variables to estimate the value of the dependent variable.
+Linear Regression is a supervised learning and statistical method used to model the relationship between a dependent variable (Y) and one or more independent variables (X) with the main objective of using the values of the independent variables to estimate the value of the dependent variable.
 
 # Simple Linear Regression
 
@@ -33,23 +31,19 @@ When more than one independent variable is used, the equation becomes:
 
 $$y = b0 + b1x1 + b2x2 + ... + bnxn$$
 
-Each coefficient represents the expected change in y associated with a one-unit increase in that predictor, while keeping the other predictors constant.
-
-The main challenge is to find the values of the coefficients that produce the best-fitting line.
+Each coefficient represents the expected change in y associated with a one-unit increase in that predictor, while keeping the other predictors constant and the main challenge is to find the values of the coefficients that produce the best-fitting line.
 
 For every observation, the model produces a predicted value:
 
 $$y = b0 + b1X1$$
 
-The difference between the actual value and the predicted value is called the residual.
-
-The Ordinary Least Squares (OLS) method finds the coefficients that minimise the sum of the squared residuals.
+The difference between the actual value and the predicted value is called the residual, and the Ordinary Least Squares (OLS) method finds the coefficients that minimise the sum of the squared residuals.
 
 # Ordinary Least Squares (OLS) Regression
 
 Ordinary Least Squares (OLS) is a statistical method used to estimate the relationship between a dependent variable and one or more independent variables.
 
-In this example, I use the Auto MPG dataset to predict mpg (miles per gallon) using information about the cars, such as cylinders, displacement, horsepower, weight, acceleration, model year, origin and car name.
+In this example, we use the Auto MPG dataset to predict mpg (miles per gallon) using information about the cars, such as cylinders, displacement, horsepower, weight, acceleration, model year, origin and car name.
 
 # Preparing the data
 
@@ -76,7 +70,7 @@ y contains the dependent variable that the model is trying to predict.
 
 # Converting horsepower into a numerical variable
 
-The horsepower column contains some values that need to be treated as missing or non-numeric values. I therefore convert the column to numeric format:
+The horsepower column contains some values that need to be treated as missing or non-numeric values. We therefore convert the column to numeric format:
 
     df['horsepower'] = pd.to_numeric(
         df['horsepower'],
@@ -123,9 +117,7 @@ This separation is important because numerical and categorical variables require
         ('onehot', OneHotEncoder(handle_unknown='ignore'))
     ])
 
-Missing categorical values are replaced with the most frequent category.
-
-OneHotEncoder then converts categorical variables into numerical binary columns.
+Missing categorical values are replaced with the most frequent category, while OneHotEncoder converts categorical variables into numerical binary columns.
 
 For example, if origin contains three categories, these can be transformed into separate columns representing each category.
 
@@ -212,9 +204,7 @@ The OLS summary contains several statistics that can be used to understand the m
 
 # R-squared (R²)
 
-R² measures the proportion of the variability in the dependent variable that is explained by the predictors included in the model.
-
-R² ranges from 0 to 1 in the usual regression setting, with higher values indicating that the model explains a larger proportion of the variation in the target variable.
+R² measures the proportion of the variability in the dependent variable that is explained by the predictors included in the model, and it ranges from 0 to 1 in the usual regression setting, with higher values indicating that the model explains a larger proportion of the variation in the target variable.
 
 However, a high R² does not automatically mean that the model is appropriate or that the relationships are causal.
 
@@ -222,9 +212,7 @@ However, a high R² does not automatically mean that the model is appropriate or
 
 Adjusted R² is similar to R² but takes the number of predictors and the sample size into account.
 
-Unlike ordinary R², it does not automatically increase when another predictor is added.
-
-Therefore, Adjusted R² can decrease when a new variable does not provide enough additional explanatory information.
+Unlike ordinary R², it does not automatically increase when another predictor is added, and actually, adjusted R² can decrease when a new variable does not provide enough additional explanatory information.
 
 This makes it useful when comparing models with different numbers of predictors.
 
@@ -232,17 +220,15 @@ This makes it useful when comparing models with different numbers of predictors.
 
 The F-statistic tests the overall significance of the regression model.
 
-The null hypothesis is that all slope coefficients are equal to zero under which, none of the predictors provides a linear contribution to explaining the target variable.
+The null hypothesis is that all slope coefficients are equal to zero, under which none of the predictors provides a linear contribution to explaining the target variable.
 
 A larger F-statistic generally provides more evidence against this null hypothesis, but the F-statistic should be interpreted together with its p-value.
 
 # Prob (F-statistic)
 
-Prob (F-statistic) is the p-value associated with the overall F-test.
+Prob (F-statistic) is the p-value associated with the overall F-test, and if below a chosen significance level, such as 0.05, there is statistical evidence that the regression model as a whole has explanatory power.
 
-If the p-value is below a chosen significance level, such as 0.05, there is statistical evidence that the regression model as a whole has explanatory power.
-
-This does not mean that every individual predictor is significant. Individual predictors are assessed separately using their coefficient, t-statistic and p-value.
+This does not mean that every individual predictor is significant, as they are assessed separately using their coefficient, t-statistic and p-value.
 
 # Coefficients
 
@@ -252,13 +238,7 @@ The lower part of the OLS table provides information about each predictor.
 
 # const
 
-const is the intercept of the regression model.
-
-It represents the expected value of mpg when all predictors are equal to zero.
-
-Because the numerical variables in this example have been standardised, the interpretation of zero for those variables corresponds to their mean.
-
-However, the intercept may not always have a meaningful real-world interpretation, particularly when a combination of zero values is unrealistic.
+const is the intercept of the regression model, and it represents the expected value of mpg when all predictors are equal to zero.
 
 # Coef
 
@@ -266,37 +246,23 @@ Coef represents the estimated regression coefficient.
 
 For a numerical predictor, it represents the expected change in mpg associated with a one-unit increase in that predictor, while holding the other predictors constant.
 
-Because the numerical variables were standardised, a one-unit increase in a standardised numerical variable corresponds approximately to an increase of one standard deviation in the original variable.
-
-For example, a negative coefficient for weight would indicate that, after controlling for the other variables, higher vehicle weight is associated with lower predicted mpg.
-
 # Std err
 
-Std err is the standard error of the estimated coefficient.
-
-It measures the uncertainty associated with the coefficient estimate.
+Std err is the standard error of the estimated coefficient, and it measures the uncertainty associated with the coefficient estimate.
 
 A smaller standard error generally means that the coefficient has been estimated more precisely.
 
-However, the standard error should not be interpreted on its own. It is used together with the coefficient to calculate the t-statistic and p-value.
-
 # t
 
-The t statistic tests whether an individual coefficient is significantly different from zero.
-
-It is calculated approximately as:
+The t statistic tests whether an individual coefficient is significantly different from zero and it is calculated approximately as:
 
 $$t = coefficient / standard error$$
 
-A large absolute t-value provides stronger evidence against the null hypothesis that the coefficient is zero.
-
-Therefore, it is more appropriate to consider the absolute value of the t-statistic rather than simply whether it is numerically high or low.
+A large absolute t-value provides stronger evidence against the null hypothesis that the coefficient is zero, and therefore, it is more appropriate to consider the absolute value of the t-statistic rather than simply whether it is numerically high or low.
 
 # P>|t|
 
-This is the p-value associated with the individual coefficient.
-
-A p-value below a chosen significance level, commonly 0.05, provides statistical evidence that the coefficient is different from zero, conditional on the model assumptions.
+This is the p-value associated with the individual coefficient, where a value below a chosen significance level, commonly 0.05, provides statistical evidence that the coefficient is different from zero, conditional on the model assumptions.
 
 Therefore, a variable with p < 0.05 is commonly described as statistically significant in this model.
 
@@ -329,15 +295,9 @@ I use Mean Absolute Error (MAE) and Mean Absolute Percentage Error (MAPE):
 <img width="424" height="33" alt="image" src="https://github.com/user-attachments/assets/8b2edac0-fb88-4ef9-ad01-6d127675165c" />
 
 
-MAE measures the average absolute difference between the observed and predicted values.
+*MAE* measures the average absolute difference between the observed and predicted values.
 
-Lower MAE indicates smaller prediction errors.
-
-Mean Absolute Percentage Error (MAPE)
-
-MAPE expresses the average prediction error as a percentage of the actual value.
-
-Lower MAPE indicates that the predictions are closer to the observed values in relative terms.
+*Mean Absolute Percentage Error (MAPE)* expresses the average prediction error as a percentage of the actual value.
 
 # Linear Regression using Scikit-learn
 
