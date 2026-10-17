@@ -7,6 +7,7 @@ categories: [Module 6 Machine Learning]
 tags: [Python]
 ---
 
+[Notebook](https://github.com/matt9891-stack/ML_Projects/blob/af6a4a5b8e48ad7ec3d867f95a299a7df17c721c/Sensitivity%20SPecificity%20type%20errors.ipynb)
 
 ## Sensitivity, Specificity and Classification Errors
 
