@@ -8,27 +8,17 @@ tags: [Python]
 ---
 # Regularised Linear Regression
 
-Linear Regression tries to find coefficients that minimise the prediction error.
-
-When the dataset contains many features, highly correlated variables, or polynomial features, the model can become too complex and may fit the training data too closely.
-
-This can lead to overfitting.
-
-Regularisation addresses this problem by adding a penalty to the model's objective function.
-
-The penalty discourages the model from assigning excessively large coefficients to the features.
+Regularisation addresses the overfitting problem by adding a penalty to the model's objective function, which discourages the model from assigning excessively large coefficients to the features.
 
 There are three important regularised linear regression techniques:
 
 Ridge Regression → L2 regularisation
+
 Lasso Regression → L1 regularisation
+
 Elastic Net → combination of L1 and L2 regularisation
 
 Regularisation could be particularly useful with Polynomial Features because Polynomial Regression can create a large number of features.
-
-As the polynomial degree increases, the number of features can grow rapidly, giving the model greater flexibility but also increasing the risk of overfitting.
-
-Regularisation can help control this complexity by penalising large coefficients.
 
 # 1. Ridge Regression
 
@@ -36,33 +26,17 @@ Ridge Regression uses L2 regularisation.
 
 The objective function can be represented as:
 
-$$
-\text{Loss} =
-\text{MSE} +
-\alpha \sum_{j=1}^{p}\beta_j^2
-$$
+<img width="307" height="87" alt="image" src="https://github.com/user-attachments/assets/01e3e06d-8129-4d9b-8aa8-dbe6d912c42e" />
 
-The additional term penalises large coefficients.
-
-The parameter controlling the strength of this penalty is called alpha in Scikit-learn.
+The additional term penalises large coefficients, and it can be controlled by the parameter called alpha in Scikit-learn.
 
 # How alpha works
 
-alpha = 0
-    ↓
-No regularisation
-    ↓
-Similar to standard Linear Regression
+alpha = 0 means no regularisation and it makes the model similar to standard Linear Regression
 
-Small alpha
-    ↓
-Weak regularisation
+Small alpha means Weak regularisation
 
-Large alpha
-    ↓
-Strong regularisation
-    ↓
-Coefficients become smaller
+Large alpha means Strong regularisation which makes Coefficients become smaller
 
 If alpha is too large, however, the model can become too constrained and may underfit the data.
 
@@ -133,43 +107,19 @@ We can evaluate it using MAE and RMSE:
 
 # 2. Lasso Regression
 
-Lasso stands for:
-
-Least Absolute Shrinkage and Selection Operator.
-
-Lasso uses L1 regularisation.
+Lasso stands for Least Absolute Shrinkage and Selection Operator, which uses L1 regularisation.
 
 Its objective function can be represented as:
 
-$$
-\text{Loss} =
-\text{MSE} +
-\alpha \sum_{j=1}^{p}|\beta_j|
-$$
+<img width="303" height="86" alt="image" src="https://github.com/user-attachments/assets/fe84ad5a-5a0f-4264-b8a8-daf1e6c7fe94" />
 
 The difference from Ridge is the type of penalty:
 
 Ridge → β²
+
 Lasso → |β|
 
-This difference has an important consequence.
-
-Lasso can force some coefficients to become exactly zero.
-
-For example:
-
-Feature              Coefficient
-
-TV                    0.82
-Radio                 0.45
-Newspaper             0.00
-TV × Radio            0.13
-TV²                   0.00
-Radio²                0.07
-
-The features with coefficients equal to zero are effectively excluded from the model.
-
-Therefore, Lasso can perform a form of automatic feature selection.
+This difference has an important consequence as Lasso can force some coefficients to become exactly zero, excluding the related features from the model.
 
 # Finding the best alpha with LassoCV
 
@@ -193,15 +143,13 @@ We can then retrieve the selected alpha:
 <img width="165" height="28" alt="image" src="https://github.com/user-attachments/assets/f936ff66-33a6-4af3-84fa-289eac28b5d0" />
 
 
-One of the advantages of Lasso is that I can inspect which coefficients have been reduced to zero.
+One of the advantages of Lasso is that we can inspect which coefficients have been reduced to zero.
 
     lasso_cv.coef_
 
 <img width="580" height="76" alt="image" src="https://github.com/user-attachments/assets/fb04ab9a-26f3-4843-bc76-2e5d1044c26d" />
 
-A coefficient of zero means that Lasso has excluded that feature from the final linear model.
-
-This can be particularly useful when Polynomial Features have generated a large number of variables.
+A coefficient of zero means that Lasso has excluded that feature from the final linear model making it particularly useful when Polynomial Features have generated a large number of variables.
 
 # Lasso predictions
 
@@ -219,41 +167,21 @@ This can be particularly useful when Polynomial Features have generated a large 
 
 # 3. Elastic Net Regression
 
-Elastic Net combines the two approaches.
-
-It uses both:
-
-L1 regularisation, from Lasso
-L2 regularisation, from Ridge
+Elastic Net combines the two approaches using both L1 regularisation, from Lasso and L2 regularisation, from Ridge
 
 The objective function can be represented conceptually as:
 
-$$\text{MSE}
-+
-\alpha
-\left[
-l1_ratio\sum|\beta_j|
-+
-(1-l1_ratio)\sum\beta_j^2
-\right]
-$$
+<img width="399" height="61" alt="image" src="https://github.com/user-attachments/assets/57aaf511-2f21-4657-a2d3-aea77c2a3156" />
 
-The two important parameters are:
+The two important parameters are Alpha, which controls the overall strength of regularisation.
 
-Alpha, which controls the overall strength of regularisation.
-
-Higher alpha
-→ stronger regularisation
+Higher alpha means stronger regularisation
 
 L1 ratio, which controls the balance between Lasso and Ridge.
 
-l1_ratio = 1
-        ↓
-Lasso-like behaviour
+When l1_ratio = 1 then we obtain a Lasso-like behaviour
 
-l1_ratio = 0
-        ↓
-Ridge-like behaviour
+On the other hand when l1_ratio = 0 we obtain a Ridge-like behaviour
 
 Values between 0 and 1 combine the two penalties.
 
@@ -303,12 +231,8 @@ The main differences can be summarised as follows:
 <img width="486" height="159" alt="image" src="https://github.com/user-attachments/assets/fd81d28d-17e8-4788-920d-02ef7e912e3d" />
 
 
-A useful conceptual comparison is:
-
 Ridge -> Keeps all features -> Shrinks their coefficients
 
-
 Lasso -> Can remove features-> Some coefficients become exactly zero
-
 
 Elastic Net -> Combines both approaches -> Useful when there are many correlated features
